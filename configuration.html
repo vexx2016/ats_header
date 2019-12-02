@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="assets/css/reser.min.css">
 	<link rel="stylesheet" href="assets/css/header.css">
-	<link rel="stylesheet" href="assets/css/tariffs.css">
+	<link rel="stylesheet" href="assets/css/configuration.css">
 	<link rel="stylesheet" href="assets/css/ui.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
@@ -841,6 +841,7 @@
 						</div>
 						<div class="service-item__content">
 							<div class="service-item__content--title">Списки номеров</div>
+							<button class="btn base-link show-more-btn --mobile">Подробнее</button>
 							<div class="service-item__content--info">
 								<p>Возможность использования списков номеров для проверки в узле "Проверка по номеру" схемы звонков.</p>
 								<p>Стоимость услуги: <b>1 руб./день</b></p>
@@ -887,6 +888,7 @@
 						</div>
 						<div class="service-item__content">
 							<div class="service-item__content--title">Мало звонков <span class="active-tariff">(Текущий тариф)</span></div>
+							<button class="btn base-link show-more-btn --mobile">Подробнее</button>
 							<div class="service-item__content--info">
 								<p>Позволяет принимать и совершать звонки с минимальным расходом в месяц, который составляет 100 рублей в месяц.</p>
 								<p>Подойдет для небольших команий. Москва 0.6 руб./мин. Мобильне по всей России: 1.7 руб./мин.</p>
@@ -967,6 +969,7 @@
 						</div>
 						<div class="service-item__content">
 							<div class="service-item__content--title">Много звонков</div>
+							<button class="btn base-link show-more-btn --mobile">Подробнее</button>
 							<div class="service-item__content--info">
 								<p>Позволяет принимать и совершать звонки с минимальным расходом в месяц, который составляет 100 рублей в месяц.</p>
 								<p>Подойдет для небольших команий. Москва 0.6 руб./мин. Мобильне по всей России: 1.7 руб./мин.</p>
@@ -1016,6 +1019,7 @@
 						</div>
 						<div class="service-item__content">
 							<div class="service-item__content--title">Очень много звонков</div>
+							<button class="btn base-link show-more-btn --mobile">Подробнее</button>
 							<div class="service-item__content--info">
 								<p>Позволяет принимать и совершать звонки с минимальным расходом в месяц, который составляет 100 рублей в месяц.</p>
 								<p>Подойдет для небольших команий. Москва 0.6 руб./мин. Мобильне по всей России: 1.7 руб./мин.</p>
@@ -1119,6 +1123,7 @@
 						</div>
 						<div class="service-item__content">
 							<div class="service-item__content--title">Количество и тип телефонных номеров</div>
+							<button class="btn base-link show-more-btn --mobile">Подробнее</button>
 							<div class="service-item__content--info">
 								<p>Позволяет принимать и совершать звонки с минимальным расходом в месяц, который составляет 100 рублей в месяц.</p>
 								<p>Подойдет для небольших команий. Москва 0.6 руб./мин. Мобильне по всей России: 1.7 руб./мин.</p>
@@ -1127,20 +1132,20 @@
 								<div class="ttl">
 									Подключенные телефонные номера
 								</div>
-								<table>
-									<tr>
-										<td>7 (499) 769-53-35</td>
-										<td><b>Гарантированый платеж:</b> 100.00 рублей в месяц</td>
-										<td>
+								<div class="tbl">
+									<div class="row">
+										<div class="cell">7 (499) 769-53-35</div>
+										<div class="cell"><b>Гарантированый платеж:</b> 100.00 рублей в месяц</div>
+										<div class="cell">
 											<button class="btn base-btn small connected disable">
 												<span class="disable">
 													<svg id="Capa_1" enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
 													<span>Отключить</span>
 												</span>
 											</button>
-										</td>
-									</tr>
-								</table>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="service-item__action connected">
@@ -1190,27 +1195,40 @@
 						</div>
 						<div class="service-item__content">
 							<div class="service-item__content--title">Подключение номеров другой телефонии</div>
+							<button class="btn base-link show-more-btn --mobile">Подробнее</button>
 							<div class="service-item__content--info">
 								<p>Позволяет принимать и совершать звонки с минимальным расходом в месяц, который составляет 100 рублей в месяц.</p>
 								<p>Подойдет для небольших команий. Москва 0.6 руб./мин. Мобильне по всей России: 1.7 руб./мин.</p>
-								<div class="service-item__content--connected-numbers">
-									<div class="ttl">
-										Подключенные телефонные номера
+							</div>
+							<div class="service-item__content--connected-numbers">
+								<div class="ttl">
+									Подключенные телефонные номера
+								</div>
+								<div class="tbl">
+									<div class="row">
+										<div class="cell">7 (499) 769-53-35</div>
+										<div class="cell"><b>Гарантированый платеж:</b> 100.00 рублей в месяц</div>
+										<div class="cell">
+											<button class="btn base-btn small connected disable">
+												<span class="disable">
+													<svg id="Capa_1" enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
+													<span>Отключить</span>
+												</span>
+											</button>
+										</div>
 									</div>
-									<table>
-										<tr>
-											<td>7 (499) 769-53-35</td>
-											<td><b>Гарантированый платеж:</b> 100.00 рублей в месяц</td>
-											<td>
-												<button class="btn base-btn small connected disable">
-													<span class="disable">
-														<svg id="Capa_1" enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
-														<span>Отключить</span>
-													</span>
-												</button>
-											</td>
-										</tr>
-									</table>
+									<div class="row">
+										<div class="cell">7 (499) 769-53-35</div>
+										<div class="cell"><b>Гарантированый платеж:</b> 100.00 рублей в месяц</div>
+										<div class="cell">
+											<button class="btn base-btn small connected disable">
+												<span class="disable">
+													<svg id="Capa_1" enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
+													<span>Отключить</span>
+												</span>
+											</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1308,6 +1326,7 @@
 						</div>
 						<div class="service-item__content">
 							<div class="service-item__content--title">Запись разговоров</div>
+							<button class="btn base-link show-more-btn --mobile">Подробнее</button>
 							<div class="service-item__content--info">
 								<p>Позволяет принимать и совершать звонки с минимальным расходом в месяц, который составляет 100 рублей в месяц.</p>
 								<p>Подойдет для небольших команий. Москва 0.6 руб./мин. Мобильне по всей России: 1.7 руб./мин.</p>
@@ -1470,6 +1489,7 @@
 						</div>
 						<div class="service-item__content">
 							<div class="service-item__content--title">Списки номеров</div>
+							<button class="btn base-link show-more-btn --mobile">Подробнее</button>
 							<div class="service-item__content--info">
 								<p>Позволяет принимать и совершать звонки с минимальным расходом в месяц, который составляет 100 рублей в месяц.</p>
 								<p>Подойдет для небольших команий. Москва 0.6 руб./мин. Мобильне по всей России: 1.7 руб./мин.</p>
@@ -1578,6 +1598,7 @@
 						</div>
 						<div class="service-item__content">
 							<div class="service-item__content--title">Отслеживание источников звонков (Call Tracking)</div>
+							<button class="btn base-link show-more-btn --mobile">Подробнее</button>
 							<div class="service-item__content--info">
 								<p>Позволяет принимать и совершать звонки с минимальным расходом в месяц, который составляет 100 рублей в месяц.</p>
 								<p>Подойдет для небольших команий. Москва 0.6 руб./мин. Мобильне по всей России: 1.7 руб./мин.</p>
@@ -1620,9 +1641,9 @@
   "use strict";
 
   	// Collapse table row
-	$('.maximize-row-btn').on('click', function (e) {
-		var block = $(this).closest('td');
-		block.find('.collapse-block').slideToggle()
+	$('.show-more-btn').on('click', function (e) {
+		var block = $(this).closest('.service-item__content');
+		block.toggleClass('show-more')
 	})
 
 
