@@ -1,15 +1,5 @@
 .monitoring__page {
   padding-top: 120px; }
-  .monitoring__page .wrap {
-    max-width: 96%;
-    margin: auto; }
-  .monitoring__page .section-title {
-    font-size: 18px;
-    font-weight: 700; }
-    .monitoring__page .section-title span {
-      font-size: 16px;
-      font-weight: 400;
-      opacity: .5; }
   .monitoring__page .--desktop .table-body.scrollbar-inner {
     overflow: scroll hidden; }
   .monitoring__page .--desktop .table-body tr:hover td {
