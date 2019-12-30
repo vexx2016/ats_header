@@ -40,8 +40,9 @@
       margin-right: 0;
       margin-left: auto; }
     .tariffs__page--section.partner-services .partner-services--item {
-      width: 100%;
+      width: 46%;
       max-width: 400px;
+      min-width: 280px;
       height: 200px;
       display: -webkit-box;
       display: -webkit-flex;
@@ -50,11 +51,14 @@
       border-radius: 3px;
       overflow: hidden;
       position: relative;
-      margin-right: 3%; }
+      margin-right: 3%;
+      margin-bottom: 10px; }
       .tariffs__page--section.partner-services .partner-services--item .cover img {
         width: 100%;
-        -o-object-fit: fill;
-           object-fit: fill; }
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        position: absolute; }
       .tariffs__page--section.partner-services .partner-services--item .content {
         position: absolute;
         width: 100%;
@@ -116,7 +120,15 @@
     .tariffs__page .service-item__content {
       font-size: 13px;
       line-height: 1.2;
-      color: #5f5f5f; }
+      color: #5f5f5f;
+      padding-right: 10px; }
+      .tariffs__page .service-item__content .show-more-btn {
+        display: none;
+        font-family: Montserrat;
+        font-size: 12px;
+        color: #949494;
+        border-bottom: solid 1px #949494;
+        margin-bottom: 14px; }
       .tariffs__page .service-item__content b {
         font-weight: 700;
         color: #313131; }
@@ -145,15 +157,37 @@
         .tariffs__page .service-item__content--connected-numbers .ttl {
           font-weight: 700;
           color: #4db6e5; }
-        .tariffs__page .service-item__content--connected-numbers table {
-          margin-top: 12px; }
-          .tariffs__page .service-item__content--connected-numbers table td {
+        .tariffs__page .service-item__content--connected-numbers .tbl {
+          margin-top: 12px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+          .tariffs__page .service-item__content--connected-numbers .tbl .row {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap; }
+            .tariffs__page .service-item__content--connected-numbers .tbl .row:not(:last-child) {
+              border-bottom: solid 1px #eee;
+              margin-bottom: 10px; }
+          .tariffs__page .service-item__content--connected-numbers .tbl .cell {
             font-size: 12px;
-            padding: 0 20px; }
-            .tariffs__page .service-item__content--connected-numbers table td:nth-of-type(1) {
+            padding: 0 20px;
+            margin-bottom: 10px; }
+            .tariffs__page .service-item__content--connected-numbers .tbl .cell .btn.base-btn {
+              margin-bottom: 0; }
+            .tariffs__page .service-item__content--connected-numbers .tbl .cell:nth-of-type(1) {
               padding: 0 40px 0 20px;
               min-width: 168px; }
-            .tariffs__page .service-item__content--connected-numbers table td:nth-of-type(2) {
+            .tariffs__page .service-item__content--connected-numbers .tbl .cell:nth-of-type(2) {
               padding: 0 40px 0 20px; }
     .tariffs__page .service-item__action {
       margin-right: 0;
@@ -166,7 +200,10 @@
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
       .tariffs__page .service-item__action--details {
         margin-bottom: 10px;
         font-size: 12px;
@@ -249,3 +286,65 @@
         .tariffs__page .btn.base-btn.connected.disable.small svg {
           max-width: 10px;
           max-height: 10px; }
+
+@media (max-width: 660px) {
+  .tariffs__page--section.partner-services .partner-services--item {
+    width: 100%;
+    margin-right: 0; } }
+
+@media (max-width: 600px) {
+  .tariffs__page .service-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .tariffs__page .service-item .service-item__content.show-more .show-more-btn {
+      color: #ed9f01;
+      border-color: #ed9f01; }
+    .tariffs__page .service-item .service-item__content.show-more .service-item__content--info {
+      display: block;
+      margin-bottom: 30px; }
+    .tariffs__page .service-item .service-item__ico {
+      margin-bottom: 20px;
+      margin-right: 0; }
+    .tariffs__page .service-item .service-item__action {
+      margin-right: auto;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .tariffs__page .service-item .service-item__content {
+      padding-right: 0;
+      text-align: center; }
+      .tariffs__page .service-item .service-item__content .active-tariff {
+        display: block; }
+      .tariffs__page .service-item .service-item__content .show-more-btn {
+        display: inline-block; }
+      .tariffs__page .service-item .service-item__content .service-item__content--connected-numbers {
+        text-align: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .tariffs__page .service-item .service-item__content .service-item__content--connected-numbers .row {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin-bottom: 30px; }
+          .tariffs__page .service-item .service-item__content .service-item__content--connected-numbers .row .cell {
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin-bottom: 20px; }
+            .tariffs__page .service-item .service-item__content .service-item__content--connected-numbers .row .cell:first-child {
+              font-size: 16px; }
+            .tariffs__page .service-item .service-item__content .service-item__content--connected-numbers .row .cell b {
+              display: block; }
+      .tariffs__page .service-item .service-item__content .service-item__content--info {
+        display: none; } }
