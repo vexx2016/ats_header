@@ -5,6 +5,8 @@
     border-right: solid 1px #eee; }
     .settings__page .base-tab.vertical .base-tab__header .scroll-wrapper {
       background: none; }
+    .settings__page .base-tab.vertical .base-tab__header .scrollbar-inner {
+      overflow: hidden !important; }
   .settings__page .base-tab.vertical .base-tab__btn .beta {
     vertical-align: super;
     font-size: 12px;
@@ -252,6 +254,12 @@
           margin-top: 5px;
           font-size: 16px;
           font-weight: 500; }
+  .settings__page .table-stop-btn .ico-stop {
+    display: none; }
+  .settings__page .table-stop-btn.playing .ico-stop {
+    display: inline-block; }
+  .settings__page .table-stop-btn.playing .ico-play {
+    display: none; }
 
 .why-internal_popup--content {
   font-size: 14px;
@@ -297,10 +305,219 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
+.autocalling-create_popup .base-popup__container {
+  max-width: 700px; }
+  .autocalling-create_popup .base-popup__container form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+
+.autocalling-create_popup .input-block.time-interval {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .autocalling-create_popup .input-block.time-interval label {
+    width: 100%; }
+  .autocalling-create_popup .input-block.time-interval .block {
+    margin-right: 10px; }
+    .autocalling-create_popup .input-block.time-interval .block input {
+      width: 70px; }
+
+.autocalling-edit_popup .base-popup__container {
+  max-width: 440px; }
+  .autocalling-edit_popup .base-popup__container form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+
+.autocalling-edit_popup .label {
+  font-weight: 700;
+  margin-bottom: 5px; }
+
+.autocalling-edit_popup .adding {
+  margin-bottom: 30px;
+  width: 100%; }
+  .autocalling-edit_popup .adding .input-block {
+    max-width: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .autocalling-edit_popup .adding .input-block .btn {
+      margin-left: 10px; }
+
+.autocalling-edit_popup .list {
+  width: 100%; }
+  .autocalling-edit_popup .list .input-block {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px; }
+  .autocalling-edit_popup .list-item {
+    padding: 10px;
+    font-size: 18px;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
+    .autocalling-edit_popup .list-item:not(:last-child) {
+      border-bottom: solid 1px #eee; }
+    .autocalling-edit_popup .list-item:hover {
+      background: rgba(241, 241, 241, 0.5); }
+
+.numlist-create_popup .label {
+  font-weight: 700;
+  margin-bottom: 5px; }
+
+.numlist-create_popup .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #eee; }
+  .numlist-create_popup .info .input-block {
+    width: 45%;
+    margin-right: 5%; }
+
+.numlist-create_popup .list {
+  width: 100%; }
+  .numlist-create_popup .list .input-block {
+    max-width: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .numlist-create_popup .list .input-block .btn {
+      margin-left: 10px; }
+  .numlist-create_popup .list-item {
+    padding: 10px;
+    font-size: 18px;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
+    .numlist-create_popup .list-item:not(:last-child) {
+      border-bottom: solid 1px #eee; }
+    .numlist-create_popup .list-item:hover {
+      background: rgba(241, 241, 241, 0.5); }
+
+.numlist-create_popup .base-popup__container form {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.calltracking-create_popup .base-popup__container {
+  max-width: 800px; }
+  .calltracking-create_popup .base-popup__container form .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .calltracking-create_popup .base-popup__container form .col-1 {
+    border-right: solid 1px #eee;
+    padding-right: 20px;
+    margin-right: 20px;
+    max-width: 300px;
+    min-width: 260px; }
+    .calltracking-create_popup .base-popup__container form .col-1 .select-block .base-checkbox {
+      margin-top: 5px; }
+  .calltracking-create_popup .base-popup__container form .caution-info {
+    color: #ffc202; }
+  .calltracking-create_popup .base-popup__container form .internal-nums {
+    margin-bottom: 20px; }
+    .calltracking-create_popup .base-popup__container form .internal-nums .select-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .calltracking-create_popup .base-popup__container form .internal-nums .select-block dl {
+        width: calc(100% - 70px);
+        margin-right: 10px; }
+      .calltracking-create_popup .base-popup__container form .internal-nums .select-block label {
+        width: 100%; }
+    .calltracking-create_popup .base-popup__container form .internal-nums .list {
+      margin-top: 10px;
+      padding: 5px;
+      border: solid 1px #eee;
+      border-radius: 3px;
+      height: 100px; }
+      .calltracking-create_popup .base-popup__container form .internal-nums .list .scrollbar-inner {
+        height: 100%; }
+      .calltracking-create_popup .base-popup__container form .internal-nums .list-item {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%;
+        margin-bottom: 5px; }
+        .calltracking-create_popup .base-popup__container form .internal-nums .list-item .btn {
+          margin-left: 6px; }
+          .calltracking-create_popup .base-popup__container form .internal-nums .list-item .btn svg {
+            width: 12px;
+            height: 12px;
+            fill: #ff0101; }
+  .calltracking-create_popup .base-popup__container form .col-2 {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .calltracking-create_popup .base-popup__container form .col-2 .adding {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      padding-bottom: 20px;
+      border-bottom: solid 1px #eee; }
+      .calltracking-create_popup .base-popup__container form .col-2 .adding .input-block,
+      .calltracking-create_popup .base-popup__container form .col-2 .adding .select-block {
+        width: 45%;
+        margin-right: 5%; }
+    .calltracking-create_popup .base-popup__container form .col-2 .pins {
+      margin-top: 20px; }
+      .calltracking-create_popup .base-popup__container form .col-2 .pins .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 20px; }
+        .calltracking-create_popup .base-popup__container form .col-2 .pins .row .input-block {
+          width: 45%;
+          margin-bottom: 0;
+          margin-right: 2%; }
+        .calltracking-create_popup .base-popup__container form .col-2 .pins .row .btn {
+          width: 18px;
+          height: 18px;
+          margin-bottom: 8px;
+          margin-top: auto;
+          -webkit-flex-shrink: 0;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0; }
+          .calltracking-create_popup .base-popup__container form .col-2 .pins .row .btn svg {
+            fill: #ff0101; }
+
 @media (max-width: 920px) {
   .settings__page .base-tab.vertical .base-tab__header {
     padding-right: 0;
-    border-right: none; } }
+    border-right: none; }
+  .settings__page .base-tab.vertical .base-tab__header .scrollbar-inner {
+    overflow: scroll hidden !important; } }
 
 @media (max-width: 660px) {
   .settings__page.__main .base-tab__body form {
@@ -309,7 +526,39 @@
             flex-wrap: wrap; }
   .settings__page.__main .base-tab__body form .col {
     width: 100%;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .calltracking-create_popup .base-popup__container form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .calltracking-create_popup .base-popup__container form .col-1 {
+      margin-right: 0;
+      padding-right: 0;
+      border-right: none;
+      min-width: 230px; }
+    .calltracking-create_popup .base-popup__container form .col-2 {
+      margin-top: 40px; }
+      .calltracking-create_popup .base-popup__container form .col-2 .adding {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+      .calltracking-create_popup .base-popup__container form .col-2 .input-block,
+      .calltracking-create_popup .base-popup__container form .col-2 .select-block {
+        width: 100% !important;
+        margin-right: 0; }
+      .calltracking-create_popup .base-popup__container form .col-2 .pins .row {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        margin-bottom: 30px; }
+        .calltracking-create_popup .base-popup__container form .col-2 .pins .row .input-block {
+          margin-bottom: 15px; } }
+
+.calltracking-widget_popup .input-block {
+  max-width: 100%; }
+
+.calltracking-widget_popup textarea {
+  width: 100%; }
 
 @media (max-width: 600px) {
   .settings__page.__internal-numbers .__internal-numbers__body .--desktop {
@@ -318,11 +567,15 @@
     display: block; } }
 
 @media (max-width: 480px) {
-  .edit-contact_popup .base-popup__container form .col {
+  .edit-contact_popup .base-popup__container form .col,
+  .autocalling-create_popup .base-popup__container form .col {
     width: 100%; }
-  .edit-contact_popup .base-popup__footer .btn {
+  .base-popup .base-popup__footer .btn {
     width: 100%;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .numlist-create_popup .info .input-block {
+    width: 100%;
+    margin-right: 0; } }
 
 @media (max-width: 460px) {
   .settings__page.__main .base-tab__body .passport-scan-block__item .header {

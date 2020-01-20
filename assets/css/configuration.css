@@ -287,6 +287,9 @@
           max-width: 10px;
           max-height: 10px; }
 
+.select-number_popup .base-tab__header .scrollbar-inner {
+  overflow: hidden !important; }
+
 .select-number_popup .base-popup__container {
   max-width: 700px; }
 
@@ -309,6 +312,47 @@
     background: #ffd802; }
   .select-number_popup--codes .btn.base-btn:hover {
     background: rgba(255, 216, 2, 0.3); }
+
+.select-number_popup--codes .select.fill.select-filter {
+  vertical-align: middle; }
+  .select-number_popup--codes .select.fill.select-filter.active dt {
+    background: #ffd802; }
+  .select-number_popup--codes .select.fill.select-filter:hover dt {
+    background: rgba(255, 216, 2, 0.3); }
+  .select-number_popup--codes .select.fill.select-filter dt {
+    background: none;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 40px;
+    -webkit-transition: .35s ease;
+    -o-transition: .35s ease;
+    transition: .35s ease; }
+    .select-number_popup--codes .select.fill.select-filter dt:before {
+      display: none; }
+    .select-number_popup--codes .select.fill.select-filter dt.active {
+      background: #ffd802; }
+    .select-number_popup--codes .select.fill.select-filter dt input {
+      font-size: 12px;
+      color: #151515;
+      font-weight: 700; }
+  .select-number_popup--codes .select.fill.select-filter dd {
+    top: 115%; }
+    .select-number_popup--codes .select.fill.select-filter dd .select-options {
+      border-top: 1px solid #d0d0d0; }
+      .select-number_popup--codes .select.fill.select-filter dd .select-options a {
+        font-size: 12px;
+        color: #151515;
+        font-weight: 700;
+        padding-right: 50px;
+        position: relative; }
+        .select-number_popup--codes .select.fill.select-filter dd .select-options a:before {
+          content: attr(data-code);
+          font-size: 12px;
+          color: #9e9e9e;
+          position: absolute;
+          right: 8px;
+          top: 8px;
+          font-weight: 500; }
 
 .select-number_popup .base-tab {
   margin-bottom: 30px; }
@@ -402,6 +446,10 @@
   .select-number_popup .select-number_popup__form .row {
     width: 100%;
     margin-bottom: 20px; }
+
+@media (max-width: 700px) {
+  .select-number_popup .base-tab__header .scrollbar-inner {
+    overflow: scroll hidden !important; } }
 
 @media (max-width: 660px) {
   .tariffs__page--section.partner-services .partner-services--item {

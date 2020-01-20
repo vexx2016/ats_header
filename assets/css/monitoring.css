@@ -1,7 +1,7 @@
 .monitoring__page {
   padding-top: 120px; }
   .monitoring__page .--desktop .table-body.scrollbar-inner {
-    overflow: scroll hidden; }
+    overflow: hidden; }
   .monitoring__page .--desktop .table-body tr:hover td {
     background: rgba(238, 238, 238, 0.5); }
   .monitoring__page .--mobile {
@@ -68,7 +68,8 @@
         display: -webkit-inline-flex;
         display: -ms-inline-flexbox;
         display: inline-flex;
-        margin-left: 50px; }
+        margin-left: 50px;
+        margin-right: 20px; }
         .monitoring__page__situation__header .sort-block .select {
           width: 130px;
           -webkit-flex-shrink: 0;
@@ -79,8 +80,6 @@
             .monitoring__page__situation__header .sort-block .select dt input {
               font-size: 13px;
               font-weight: 600; }
-          .monitoring__page__situation__header .sort-block .select dd .select-options a {
-            margin-bottom: 4px; }
         .monitoring__page__situation__header .sort-block .input-block {
           margin-bottom: 0;
           width: 90px;
@@ -108,6 +107,16 @@
             height: 1px;
             background: rgba(0, 0, 0, 0.12);
             display: inline-block; }
+      .monitoring__page__situation__header .base-checkbox {
+        margin-right: 0;
+        margin-left: auto;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0; }
+        .monitoring__page__situation__header .base-checkbox label span {
+          font-size: 13px; }
+        .monitoring__page__situation__header .base-checkbox label .check {
+          background: #fff; }
     .monitoring__page__situation__table {
       margin-top: 20px; }
       .monitoring__page__situation__table .base-table {
@@ -238,6 +247,14 @@
         .monitoring__page__calls__table .base-pagination .btn {
           font-weight: 600; }
 
+@media (max-width: 1100px) {
+  .monitoring__page .--desktop .table-body.scrollbar-inner {
+    overflow: scroll hidden; }
+  .monitoring__page__calls__table .base-pagination {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+
 @media (max-width: 600px) {
   .monitoring__page__situation__header {
     -webkit-flex-wrap: wrap;
@@ -256,9 +273,15 @@
       .monitoring__page__situation__header .sort-block .date-inputs {
         margin-left: 0;
         margin-top: 15px; }
+    .monitoring__page__situation__header .base-checkbox {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 20px; }
   .monitoring__page__situation__table.--desktop,
   .monitoring__page__calls__table.--desktop {
     display: none; }
   .monitoring__page__situation__table.--mobile,
   .monitoring__page__calls__table.--mobile {
-    display: block; } }
+    display: block; }
+  .base-pagination .page-btns .btn {
+    padding: 10px 12px; } }
