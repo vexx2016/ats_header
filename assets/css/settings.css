@@ -300,10 +300,56 @@
       .why-internal_popup--content .row .info .line {
         margin-right: 10px; }
 
-.edit-contact_popup .base-popup__container form {
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+.edit-contact_popup .base-popup__container {
+  max-width: 900px; }
+  .edit-contact_popup .base-popup__container .col {
+    width: 30%; }
+  .edit-contact_popup .base-popup__container form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .edit-contact_popup .base-popup__container form p.info {
+      color: #f18a17;
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      margin-top: 10px; }
+    .edit-contact_popup .base-popup__container form .input-block.webrtc,
+    .edit-contact_popup .base-popup__container form .input-block.fmc-number {
+      padding-top: 20px;
+      border-top: solid 1px #eee; }
+
+.calls-forwarding_popup .base-popup__container {
+  max-width: 750px; }
+  .calls-forwarding_popup .base-popup__container .calls-forwarding_popup--contacts .title {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px; }
+  .calls-forwarding_popup .base-popup__container .calls-forwarding_popup--contacts .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .calls-forwarding_popup .base-popup__container .calls-forwarding_popup--contacts .col {
+    min-width: 200px;
+    width: 33%;
+    padding-right: 2%; }
+  .calls-forwarding_popup .base-popup__container .calls-forwarding_popup--contacts .base-toggle {
+    margin-bottom: 20px; }
+  .calls-forwarding_popup .base-popup__container .calls-forwarding_popup--contacts .base-toggle .txt {
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 20px;
+    padding-left: 8px; }
+
+.calls-forwarding_popup--content .info {
+  margin-bottom: 30px;
+  line-height: 18px;
+  font-size: 14px;
+  max-width: 500px; }
 
 .autocalling-create_popup .base-popup__container {
   max-width: 700px; }
@@ -564,7 +610,10 @@
   .settings__page.__internal-numbers .__internal-numbers__body .--desktop {
     display: none; }
   .settings__page.__internal-numbers .__internal-numbers__body .--mobile {
-    display: block; } }
+    display: block; }
+  .calls-forwarding_popup .base-popup__container .calls-forwarding_popup--contacts .col {
+    width: 100%;
+    padding-right: 0; } }
 
 @media (max-width: 480px) {
   .edit-contact_popup .base-popup__container form .col,

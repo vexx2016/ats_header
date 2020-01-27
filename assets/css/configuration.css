@@ -447,6 +447,85 @@
     width: 100%;
     margin-bottom: 20px; }
 
+.request-numbers_popup .request_popup__numbers .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .request-numbers_popup .request_popup__numbers .row:not(:last-child) {
+    border-bottom: solid 1px #eee;
+    margin-bottom: 10px;
+    padding-bottom: 5px; }
+
+.request-numbers_popup .request_popup__numbers .num {
+  font-size: 18px;
+  width: 60%;
+  min-width: 200px;
+  margin-bottom: 5px; }
+
+.request-numbers_popup .request_popup__numbers .status {
+  width: 40%;
+  margin-bottom: 5px; }
+
+.request-numbers_popup .request_popup__numbers .tag {
+  font-size: 13px;
+  padding: 2px 5px;
+  background: #eee;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 3px; }
+  .request-numbers_popup .request_popup__numbers .tag.green {
+    background: rgba(6, 148, 5, 0.1);
+    color: #069405; }
+  .request-numbers_popup .request_popup__numbers .tag.red {
+    background: rgba(255, 1, 1, 0.1);
+    color: #ff0101; }
+
+.connect-external_popup .base-popup__container {
+  max-width: 450px; }
+
+.connect-external_popup form {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .connect-external_popup form p.info {
+    color: #f18a17;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
+.connect-external_popup .box {
+  width: 100%;
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 3px;
+  margin-bottom: 30px; }
+  .connect-external_popup .box .title {
+    margin-top: 5px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #6f6f6f; }
+  .connect-external_popup .box .input-block {
+    max-width: 100%; }
+  .connect-external_popup .box .row.port {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .connect-external_popup .box .row.port .input-block:nth-of-type(1) {
+      width: calc(100% - 90px); }
+    .connect-external_popup .box .row.port .input-block:nth-of-type(2) {
+      width: 80px; }
+
 @media (max-width: 700px) {
   .select-number_popup .base-tab__header .scrollbar-inner {
     overflow: scroll hidden !important; } }

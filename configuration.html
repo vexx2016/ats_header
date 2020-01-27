@@ -928,8 +928,8 @@
 						</div>
 						<div class="service-item__action connected">
 							<button class="btn base-btn popup-btn__open">+ Новый номер</button>
-							<button class="btn base-btn small requests-btn">Запросы подключения номеров</button>
-							<button class="btn base-btn small requests-btn">Запросы отключения номеров</button>
+							<button class="btn base-btn small requests-btn popup-btn__open" data-popup="request-plugged">Запросы подключения номеров</button>
+							<button class="btn base-btn small requests-btn popup-btn__open" data-popup="request-unplugged">Запросы отключения номеров</button>
 						</div>
 					</div>
 					<div class="service-item">
@@ -1011,7 +1011,7 @@
 							</div>
 						</div>
 						<div class="service-item__action">
-							<button class="btn base-btn popup-btn__open">+ Новый номер</button>
+							<button class="btn base-btn popup-btn__open" data-popup="connect-external">+ Новый номер</button>
 						</div>
 					</div>
 				</div>
@@ -1604,6 +1604,107 @@
 			<div class="base-popup__footer">
 				<button class="btn base-btn grey popup-btn__close">Отмена</button>
 				<button class="btn base-btn">Выбрать номер</button>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="base-popup request-numbers_popup" data-popup="request-plugged">
+		<div class="base-popup__container">
+			<div class="base-popup__title">Список запросов на подключения номера</div>
+			<div class="request_popup__numbers">
+				<div class="row">
+					<div class="num">+7 (495) 103-42-38</div>
+					<div class="status">
+						<div class="tag green">Завершен</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="num">+7 (495) 132-64-31</div>
+					<div class="status">
+						<div class="tag green">Завершен</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="num">+7 (495) 178-01-96</div>
+					<div class="status">
+						<div class="tag red">Ошибка обработки</div>
+					</div>
+				</div>
+			</div>
+			<div class="base-popup__footer">
+				<button class="btn base-btn grey popup-btn__close" data-popup="request-plugged">Закрыть</button>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="base-popup request-numbers_popup" data-popup="request-unplugged">
+		<div class="base-popup__container">
+			<div class="base-popup__title">Список запросов на отключения номера</div>
+			<div class="request_popup__numbers">
+				<div class="row">
+					<div class="num">+7 (495) 178-01-96</div>
+					<div class="status">
+						<div class="tag red">Ошибка обработки</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="num">+7 (495) 103-42-38</div>
+					<div class="status">
+						<div class="tag green">Завершен</div>
+					</div>
+				</div>
+			</div>
+			<div class="base-popup__footer">
+				<button class="btn base-btn grey popup-btn__close" data-popup="request-unplugged">Закрыть</button>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="base-popup connect-external_popup" data-popup="connect-external">
+		<div class="base-popup__container">
+			<div class="base-popup__title">Подключение номеров другой телефонии</div>
+			<form action="">
+				<div class="input-block">
+					<label for="input_1">Укажите номер для подключения</label>
+					<input type="text" id="input_1" name="input_1">
+				</div>
+				<div class="box">
+					<div class="title">
+						Сервер
+					</div>
+					<div class="row port">
+						<div class="input-block">
+							<label for="input_2">Адрес</label>
+							<input type="text" id="input_2" name="input_2">
+						</div>
+						<div class="input-block">
+							<label for="input_3">Порт</label>
+							<input type="text" id="input_3" name="input_3">
+						</div>
+					</div>
+					<div class="input-block">
+						<label for="input_4">SIP прокси</label>
+						<input type="text" id="input_4" name="input_4">
+					</div>
+				</div>
+				<div class="box">
+					<div class="title">
+						SIP пир
+					</div>
+					<div class="input-block">
+						<label for="input_5">Имя</label>
+						<input type="text" id="input_5" name="input_5">
+					</div>
+					<div class="input-block">
+						<label for="input_6">Пароль</label>
+						<input type="text" id="input_6" name="input_6">
+					</div>
+				</div>
+				<p class="info">Данные будут обработаны на протяжении 24 часов.</p>
+			</form>
+			<div class="base-popup__footer">
+				<button class="btn base-btn grey popup-btn__close" data-popup="connect-external">Отмена</button>
+				<button class="btn base-btn save-btn">Сохранить</button>
 			</div>
 		</div>
 	</div>
