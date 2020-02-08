@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Основные — 1ATS</title>
+	<title>External Numbers — 1ATS</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/reser.min.css">
@@ -606,14 +606,14 @@
 	</div>
 </header>
 	<!-- HEADER -->
-	<main class="settings__page __main">
+	<main class="settings__page __internal-numbers">
 		<div class="wrap">
 			<div class="base-tab vertical">
 				<div class="base-tab__header">
 					<div class="scrollbar-inner">
-						<a href="company.html" class="btn base-tab__btn active">Основные</a>
+						<a href="company.html" class="btn base-tab__btn ">Основные</a>
 						<a href="persons.html" class="btn base-tab__btn">Пользователи</a>
-						<a href="externalNumbers.html" class="btn base-tab__btn">Внешние номера</a>
+						<a href="externalNumbers.html" class="btn base-tab__btn active">Внешние номера</a>
 						<a href="accounts.html" class="btn base-tab__btn">Внутренние номера</a>
 						<a href="voiceMails.html" class="btn base-tab__btn">Голосовые почты</a>
 						<a href="huntGroups.html" class="btn base-tab__btn">Группы</a>
@@ -631,269 +631,272 @@
 				</div>
 				<div class="base-tab__body">
 					<div class="base-tab__block active">
-						<form action="">
-							<div class="col">
-								<div class="input-block disabled">
-									<label for="input_1">Номер договора</label>
-									<input type="text" id="input_1" name="input_1" value="170000924">
+						<div class="__internal-numbers__body">
+							<div class="internal-numbers__table --desktop">
+								<div class="table-body scrollbar-inner">
+									<table class="base-table">
+										<thead>
+											<tr>
+												<td>Номер</td>
+												<td>Тип номера</td>
+												<td>Входящая схема</td>
+												<td>Исходящая схема</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>+7 (495) 103-42-38</td>
+												<td>Обычный</td>
+												<td>calschema.newSchema</td>
+												<td>calschema.newSchema</td>
+											</tr>
+											<tr>
+												<td>+7 (495) 769-35-53</td>
+												<td>Золотой</td>
+												<td>Redirect to 79523983</td>
+												<td>Call to PSTN</td>
+											</tr>
+											<!--  -->
+										</tbody>
+									</table>
 								</div>
-								<div class="input-block">
-									<label for="input_1">Контактное лицо</label>
-									<input type="text" id="input_1" name="input_1" value="Ярослав">
-								</div>
-								<div class="input-block">
-									<label for="input_2">Телефон для связи</label>
-									<input type="text" id="input_2" name="input_2" value="">
-								</div>
-								<div class="input-block">
-									<label for="input_3">Email</label>
-									<input type="text" id="input_3" name="input_3" value="">
-								</div>
-								<div class="select-block">
-									<label>Тип клиента</label>
-									<dl class="select select-filter select-flag scrollable">
-										<dt class="">
-											<input type="text" name="scope" value="Физическое лицо">
-										</dt>
-										<dd>
-											<div class="select-options">
-												<div class="scroll-cont scrollbar-inner">
-													<a data-value="10">10</a>
-													<a data-value="20" >20</a>
-												</div>
-											</div>
-										</dd>
-									</dl>
-								</div>
-								<div class="input-block">
-									<label for="input_4">Название</label>
-									<input type="text" id="input_4" name="input_4" value="">
-								</div>
-								<div class="input-block">
-									<label for="input_4">Адрес для корреспонденции</label>
-									<input type="text" id="input_4" name="input_4" value="">
-								</div>
-
-								<div class="select-block">
-									<label>Часовой пояс</label>
-									<dl class="select select-filter select-flag scrollable">
-										<dt class="">
-											<input type="text" name="scope" value="">
-										</dt>
-										<dd>
-											<div class="select-options">
-												<div class="scroll-cont scrollbar-inner">
-													<a data-value="10">10</a>
-													<a data-value="20" >20</a>
-												</div>
-											</div>
-										</dd>
-									</dl>
-								</div>
-								<div class="input-block">
-									<label>Показывать предложение услуги настройки телефонии</label>
-									<div class="base-toggle">
-								        <input type="checkbox" id="check_15" name="check_15">
-								        <label for="check_15">
-								          <span class="toggle-btn">
-								            <span class="o"></span>
-								          </span>
-								        </label>
-								      </div>
-								</div>
-							</div>
-							<div class="col">
-								<div class="input-block">
-									<label for="input_51">ФИО</label>
-									<input type="text" id="input_51" name="input_51" value="">
-								</div>
-								<div class="input-block">
-									<label for="input_52">Номер паспорта</label>
-									<input type="text" id="input_52" name="input_52" value="">
-								</div>
-								<div class="passport-scan-block">
-									<div class="title">
-										<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 260.666 260.666" style="enable-background:new 0 0 260.666 260.666;" xml:space="preserve">
+						</div>
+						<div class="internal-numbers__table --mobile">
+								<div class="table-body scrollbar-inner">
+									<table class="base-table">
+										<tbody>
+											<tr>
+												<td>
+													<div class="row">
+														<div class="btn maximize-row-btn">
+															<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 15 9" style="enable-background:new 0 0 15 9;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<polyline class="st0" points="1.1,1.5 7.5,7.5 13.9,1.5 "/>
 <g>
-	<path d="M236.666,40.882H24c-13.233,0-24,10.767-24,24v130.902c0,13.233,10.767,24,24,24h212.666c13.233,0,24-10.767,24-24V64.882
-		C260.666,51.648,249.899,40.882,236.666,40.882z M245.666,195.784c0,4.962-4.037,9-9,9H24c-4.963,0-9-4.038-9-9V64.882
-		c0-4.962,4.037-9,9-9h212.666c4.963,0,9,4.038,9,9V195.784z"/>
-	<path d="M216.04,83.703h-68.933c-3.314,0-6,2.687-6,6s2.686,6,6,6h68.933c3.314,0,6-2.687,6-6S219.354,83.703,216.04,83.703z"/>
-	<path d="M216.04,164.963h-68.933c-3.314,0-6,2.686-6,6c0,3.313,2.686,6,6,6h68.933c3.314,0,6-2.687,6-6
-		C222.04,167.649,219.354,164.963,216.04,164.963z"/>
-	<path d="M216.04,118.411h-41.718c-3.313,0-6,2.687-6,6s2.687,6,6,6h41.718c3.314,0,6-2.687,6-6S219.354,118.411,216.04,118.411z"/>
-	<path d="M216.04,141.686h-41.718c-3.313,0-6,2.687-6,6c0,3.314,2.687,6,6,6h41.718c3.314,0,6-2.686,6-6
-		C222.04,144.373,219.354,141.686,216.04,141.686z"/>
-	<path d="M85.163,133.136c17.004,0,30.838-13.839,30.838-30.849c0-17.011-13.834-30.85-30.838-30.85
-		c-17.009,0-30.847,13.839-30.847,30.85C54.316,119.297,68.154,133.136,85.163,133.136z M85.163,86.438
-		c8.733,0,15.838,7.11,15.838,15.85c0,8.739-7.104,15.849-15.838,15.849c-8.738,0-15.847-7.11-15.847-15.849
-		C69.316,93.548,76.425,86.438,85.163,86.438z"/>
-	<path d="M97.097,138.68H73.415c-16.592,0-30.09,13.497-30.09,30.088v12.961c0,4.142,3.357,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-12.961
-		c0-8.319,6.77-15.088,15.09-15.088h23.682c8.32,0,15.09,6.768,15.09,15.088v12.961c0,4.142,3.357,7.5,7.5,7.5s7.5-3.358,7.5-7.5
-		v-12.961C127.187,152.177,113.688,138.68,97.097,138.68z"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
+	<polygon points="7.5,8.8 0,1.7 1.5,0.2 7.5,5.9 13.5,0.2 15,1.7 	"/>
 </g>
 </svg>
 
-										<span>Скан-копия страниц паспорта</span>
-									</div>
-									<div class="passport-scan-block__item">
-										<div class="header">
-											<div class="ttl">Первая страница</div>
-											<input type="file">
-										</div>
-										<div class="file">
-											<div class="file-status">
-												<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 240.608 240.608" style="enable-background:new 0 0 240.608 240.608;" xml:space="preserve">
-<path style="fill:#020202;" d="M208.789,29.972l31.819,31.82L91.763,210.637L0,118.876l31.819-31.82l59.944,59.942L208.789,29.972z"
-	/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
-
-												<span>загружено</span>
-											</div>
-											<div class="file-name">
-												<span>img124.pdf</span>
-												<button class="btn base-btn">
-													<svg id="Capa_1" enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="passport-scan-block__item">
-										<div class="header">
-											<div class="ttl">Страница с пропиской</div>
-											<input type="file">
-										</div>
-										<div class="file">
-											<div class="file-status">
-												<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 240.608 240.608" style="enable-background:new 0 0 240.608 240.608;" xml:space="preserve">
-<path style="fill:#020202;" d="M208.789,29.972l31.819,31.82L91.763,210.637L0,118.876l31.819-31.82l59.944,59.942L208.789,29.972z"
-	/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
-
-												<span>загружено</span>
-											</div>
-											<div class="file-name">
-												<span>img4367.pdf</span>
-												<button class="btn base-btn">
-													<svg id="Capa_1" enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
-												</button>
-											</div>
-										</div>
-									</div>
+														</div>
+														<div class="td-block">
+															<div class="label">Номер</div>
+															<div class="data">+7 (495) 769-35-53</div>
+														</div>
+														<div class="td-block">
+															<div class="label">Тип номера</div>
+															<div class="data">Золотой</div>
+														</div>
+													</div>
+													<div class="collapse-block">
+														<div class="td-block">
+															<div class="label">Входящая схема</div>
+															<div class="data">Redirect to 79523983</div>
+														</div>
+														<div class="td-block">
+															<div class="label">Исходящая схема</div>
+															<div class="data">Call to PSTN</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<!--  -->
+										</tbody>
+									</table>
 								</div>
-							</div>
-						</form>
-						<div class="row btns-row">
-							<button class="btn base-btn grey delete-info-btn">Удалить персональные данные</button>
-							<button class="btn base-btn big save-btn">Сохранить</button>
+						</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
+	<!--  -->
+	<div class="base-popup persons-pass_popup" data-popup="edit-pass">
+		<div class="base-popup__container">
+			<div class="base-popup__title">Изменить пароль пользователя</div>
+			<div class="info">
+				Пользователь <span>test tesdt1</span>
+			</div>
+			<form action="">
+				<div class="input-block">
+					<label for="input_13">Текущий пароль</label>
+					<input type="text" id="input_13" name="input_13" value="">
+				</div>
+				<div class="input-block">
+					<label for="input_23">Новый пароль</label>
+					<input type="text" id="input_23" name="input_23" value="">
+				</div>
+				<div class="input-block">
+					<label for="input_33">Подтверждение пароля</label>
+					<input type="text" id="input_33" name="input_33" value="">
+				</div>
+			</form>
+			<div class="base-popup__footer">
+				<button class="btn base-btn grey popup-btn__close" data-popup="edit-pass">Отмена</button>
+				<button class="btn base-btn save-btn">Сохранить</button>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="base-popup settings-delete_popup" data-popup="settings-delete">
+		<div class="base-popup__container">
+			<div class="base-popup__title">Удалить пользователя</div>
+			<div class="settings-delete_popup--content">
+				Удалить пользователя <span class="b">test tesdt1</span>?
+			</div>
+			<div class="base-popup__footer">
+				<button class="btn base-btn grey popup-btn__close" data-popup="settings-delete">Отмена</button>
+				<button class="btn base-btn save-btn">Удалить</button>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="base-popup persons-create_popup" data-popup="create-person">
+		<div class="base-popup__container">
+			<div class="base-popup__title">Создать пользователя</div>
+			<form action="">
+				<div class="col">
+					<div class="input-block">
+						<label for="input_1">Имя</label>
+						<input type="text" id="input_1" name="input_1" value="">
+					</div>
+					<div class="input-block">
+						<label for="input_2">Фамилия</label>
+						<input type="text" id="input_2" name="input_2" value="">
+					</div>
+					<div class="input-block">
+						<label for="input_3">E-mail</label>
+						<input type="text" id="input_3" name="input_3" value="">
+					</div>
+				</div>
+				<div class="col">
+					<div class="input-block">
+						<label for="input_4">Логин</label>
+						<input type="text" id="input_4" name="input_4" value="">
+					</div>
+					<div class="input-block">
+						<label for="input_5">Пароль</label>
+						<input type="text" id="input_5" name="input_5" value="">
+					</div>
+					<div class="select-block">
+						<label>Роль</label>
+						<dl class="select select-filter select-flag scrollable">
+							<dt class="">
+								<input type="text" name="scope" class="required" value="Администратор">
+							</dt>
+							<dd>
+								<div class="select-options">
+									<div class="scroll-cont scrollbar-inner">
+										<a data-value="10">Пользователь</a>
+										<a data-value="20" >Администратор</a>
+									</div>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</form>
+			<div class="base-popup__footer">
+				<button class="btn base-btn grey popup-btn__close" data-popup="create-person">Отмена</button>
+				<button class="btn base-btn save-btn">Сохранить</button>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="base-popup persons-edit_popup" data-popup="edit-person">
+		<div class="base-popup__container">
+			<div class="base-popup__title">Создать пользователя</div>
+			<form action="">
+				<div class="col">
+					<div class="input-block">
+						<label for="input_12">Имя</label>
+						<input type="text" id="input_12" name="input_12" value="test">
+					</div>
+					<div class="input-block">
+						<label for="input_22">Фамилия</label>
+						<input type="text" id="input_22" name="input_22" value="tesdt1">
+					</div>
+					<div class="input-block">
+						<label for="input_32">E-mail</label>
+						<input type="text" id="input_32" name="input_32" value="y.mm@email.com">
+					</div>
+				</div>
+				<div class="col">
+					<div class="input-block">
+						<label for="input_42">Логин</label>
+						<input type="text" id="input_42" name="input_42" value="ymm">
+					</div>
+					<div class="select-block">
+						<label>Роль</label>
+						<dl class="select select-filter select-flag scrollable">
+							<dt class="">
+								<input type="text" name="scope" class="required" value="Администратор">
+							</dt>
+							<dd>
+								<div class="select-options">
+									<div class="scroll-cont scrollbar-inner">
+										<a data-value="10">Пользователь</a>
+										<a data-value="20" >Администратор</a>
+									</div>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</form>
+			<div class="base-popup__footer">
+				<button class="btn base-btn grey popup-btn__close" data-popup="edit-person">Отмена</button>
+				<button class="btn base-btn save-btn">Сохранить</button>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<!--  -->
+	<div class="base-popup why-internal_popup" data-popup="why-internal">
+		<div class="base-popup__container">
+			<div class="base-popup__title">Зачем нужны внутренние номера?</div>
+			<div class="why-internal_popup--content">
+				<p>Для каждого сотрудника или устройства необходимо создать внутренний номер, чтобы в дальнейшем его можно было использовать в схеме распределения звонков и идентифицироватьв отчетах по звонкам. При создании внутреннего номера та кже создаются SIP данные, которые используются при настройке оборудования принимающего звонки.</p>
+				<div class="title">Как пользоваться?</div>
+				<div class="row">
+					<div class="ico"><button class="btn base-btn create-contact-btn">Создать контакт</button></div>
+					<div class="info"><span class="line">—</span> Создать контакт "Внутреннего номера"</div>
+				</div>
+				<div class="row">
+					<div class="ico"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 448 448" style="enable-background:new 0 0 448 448;" xml:space="preserve">
+<g>
+	<circle cx="242.9" cy="205.1" r="69.7"/>
+	<path d="M224,0C100.3,0,0,100.3,0,224s100.3,224,224,224s224-100.3,224-224C447.9,100.3,347.7,0.1,224,0z M242.9,291.2
+		c-20.8,0-39.9-7.4-54.8-19.7L130.6,329L119,317.4l57.5-57.5c-12.3-14.9-19.7-34-19.7-54.8c0-47.5,38.6-86.1,86.1-86.1
+		c47.5,0,86.1,38.6,86.1,86.1C329,252.6,290.4,291.2,242.9,291.2z"/>
+</g>
+</svg>
+</div>
+					<div class="info"><span class="line">—</span> Контакты звонки на которые могут быть перехвачены</div>
+				</div>
+				<div class="row">
+					<div class="ico"><svg height="448pt" viewBox="0 0 448 448" width="448pt" xmlns="http://www.w3.org/2000/svg"><path d="m248 224c0 13.253906-10.746094 24-24 24s-24-10.746094-24-24 10.746094-24 24-24 24 10.746094 24 24zm0 0"/><path d="m282.007812 172c-3.023437 1.746094-6.832031 1.328125-9.40625-1.03125-7.734374-7.152344-16.957031-12.5-27-15.664062-3.335937-1.050782-5.601562-4.140626-5.601562-7.632813v-27.671875h-32v27.671875c0 3.492187-2.265625 6.582031-5.601562 7.632813-10.046876 3.171874-19.269532 8.535156-27 15.695312-2.574219 2.359375-6.382813 2.777344-9.40625 1.03125l-24.054688-13.886719-16 27.710938 24 13.855469c3.023438 1.75 4.566406 5.253906 3.804688 8.664062-2.335938 10.285156-2.335938 20.964844 0 31.25.761718 3.410156-.78125 6.914062-3.804688 8.664062l-24 13.855469 16 27.710938 24.054688-13.855469c3.023437-1.746094 6.832031-1.328125 9.40625 1.03125 7.730468 7.15625 16.953124 12.503906 27 15.664062 3.335937 1.050782 5.601562 4.140626 5.601562 7.632813v27.671875h32v-27.671875c0-3.492187 2.265625-6.582031 5.601562-7.632813 10.050782-3.167968 19.269532-8.53125 27-15.695312 2.574219-2.359375 6.382813-2.777344 9.40625-1.03125l24.054688 13.886719 16-27.710938-24-13.855469c-3.023438-1.75-4.566406-5.253906-3.804688-8.664062 2.335938-10.285156 2.335938-20.964844 0-31.25-.761718-3.410156.78125-6.914062 3.804688-8.664062l24-13.855469-16-27.710938zm-58.007812 92c-22.089844 0-40-17.910156-40-40s17.910156-40 40-40 40 17.910156 40 40c-.027344 22.082031-17.917969 39.972656-40 40zm0 0"/><path d="m224 0c-123.710938 0-224 100.289062-224 224s100.289062 224 224 224 224-100.289062 224-224c-.140625-123.652344-100.347656-223.859375-224-224zm88 224c-.003906 4.4375-.351562 8.871094-1.03125 13.257812l26.03125 15.03125c3.824219 2.207032 5.136719 7.101563 2.929688 10.925782l-24 41.601562c-2.210938 3.824219-7.101563 5.136719-10.929688 2.925782l-26.078125-15.046876c-6.917969 5.574219-14.648437 10.058594-22.921875 13.296876v30.007812c0 4.417969-3.582031 8-8 8h-48c-4.417969 0-8-3.582031-8-8v-30.007812c-8.273438-3.246094-16.003906-7.742188-22.921875-13.328126l-26.078125 15.046876c-3.828125 2.210937-8.71875.898437-10.929688-2.925782l-24-41.601562c-2.207031-3.824219-.894531-8.71875 2.929688-10.925782l26.03125-15.035156c-1.375-8.78125-1.375-17.726562 0-26.511718l-26.03125-15.03125c-3.824219-2.207032-5.136719-7.101563-2.929688-10.925782l24-41.601562c2.210938-3.828125 7.101563-5.136719 10.929688-2.929688l26.078125 15.058594c6.917969-5.570312 14.648437-10.046875 22.921875-13.273438v-30.007812c0-4.417969 3.582031-8 8-8h48c4.417969 0 8 3.582031 8 8v30.007812c8.277344 3.246094 16.007812 7.742188 22.921875 13.335938l26.078125-15.054688c3.828125-2.210937 8.71875-.898437 10.929688 2.925782l24 41.601562c2.207031 3.824219.894531 8.71875-2.929688 10.925782l-26.03125 15.035156c.679688 4.375 1.023438 8.792968 1.03125 13.222656zm0 0"/></svg></div>
+					<div class="info"><span class="line">—</span> Редактировать контакт</div>
+				</div>
+				<div class="row">
+					<div class="ico"><svg height="448pt" viewBox="0 0 448 448" width="448pt" xmlns="http://www.w3.org/2000/svg"><path d="m128 168h192v-16h-192zm0 0"/><path d="m224 0c-123.710938 0-224 100.289062-224 224s100.289062 224 224 224 224-100.289062 224-224c-.140625-123.652344-100.347656-223.859375-224-224zm112 176c0 4.417969-3.582031 8-8 8h-8.761719l-15.238281 152.800781c-.414062 4.101563-3.875 7.21875-8 7.199219h-144c-4.125.019531-7.585938-3.097656-8-7.199219l-15.199219-152.800781h-8.800781c-4.417969 0-8-3.582031-8-8v-32c0-4.417969 3.582031-8 8-8h81.472656c-.949218-2.5625-1.445312-5.269531-1.472656-8 0-13.253906 10.746094-24 24-24s24 10.746094 24 24c-.027344 2.730469-.523438 5.4375-1.472656 8h81.472656c4.417969 0 8 3.582031 8 8zm0 0"/><path d="m159.238281 328h129.5625l14.398438-144h-158.359375zm96.800781-104.992188c.292969-2.886718 2.125-5.390624 4.792969-6.542968 2.664063-1.148438 5.746094-.761719 8.046875 1.007812 2.300782 1.769532 3.460938 4.648438 3.03125 7.519532l-8 64c-.496094 3.992187-3.886718 6.996093-7.910156 7.007812-.335938 0-.667969-.023438-1-.0625-4.382812-.550781-7.492188-4.546875-6.945312-8.929688zm-40.039062.992188c0-4.417969 3.582031-8 8-8s8 3.582031 8 8v64c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8zm-32.992188-7.9375c4.382813-.546875 8.378907 2.5625 8.929688 6.945312l8 64c.546875 4.382813-2.5625 8.378907-6.945312 8.929688-.328126.039062-.660157.058594-.992188.0625-4.03125-.003906-7.429688-3.007812-7.929688-7.007812l-8-64c-.546874-4.378907 2.558594-8.375 6.9375-8.929688zm0 0"/><path d="m232 128c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8 3.582031-8 8-8 8 3.582031 8 8zm0 0"/></svg></div>
+					<div class="info"><span class="line">—</span> Удалить контакт</div>
+				</div>
+			</div>
+			<div class="base-popup__footer">
+				<button class="btn base-btn grey popup-btn__close" data-popup="why-internal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+	<!--  -->
 </body>
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../assets/js/jquery.scrollbar.min.js"></script>
@@ -910,9 +913,6 @@
 	}
 
 
-
-
-
 // 
 //
 (function ($) {
@@ -925,11 +925,12 @@
     });
   });
 
-	// Collapse table row
-	$('.show-more-btn').on('click', function (e) {
-		var block = $(this).closest('.service-item__content');
-		block.toggleClass('show-more')
+  // Collapse table row
+	$('.maximize-row-btn').on('click', function (e) {
+		var block = $(this).closest('td');
+		block.find('.collapse-block').slideToggle()
 	})
+
 
 	// popup open _btn
 	$('.popup-btn__open').click(function() {
