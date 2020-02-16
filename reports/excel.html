@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Отчеты / Звонки — 1ATS</title>
+	<title>Отчеты / Файлы отчетов — 1ATS</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/reser.min.css">
@@ -606,152 +606,9 @@
 	</div>
 </header>
 	<!-- HEADER -->
-	<main class="reports__page --calls">
+	<main class="reports__page --call-tracking">
 		<div class="wrap reports__page__wrap">
-			<aside class="reports__page__filters">
-				<div class="reports__page__filters__header">
-					<div class="reports__page__filters--title">Фильтры</div>
-					<div class="btn maximize-filters">
-						<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 15 9" style="enable-background:new 0 0 15 9;" xml:space="preserve">
-<style type="text/css">
-	.st0{display:none;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-</style>
-<polyline class="st0" points="1.1,1.5 7.5,7.5 13.9,1.5 "/>
-<g>
-	<polygon points="7.5,8.8 0,1.7 1.5,0.2 7.5,5.9 13.5,0.2 15,1.7 	"/>
-</g>
-</svg>
-
-					</div>
-				</div>
-				<div class="container">
-					<div class="filter-block date">
-						<label>Дата</label>
-						<div class="row">
-							<div class="select-block">
-								<dl class="select select-filter select-flag scrollable">
-									<dt class="">
-										<input type="text" name="scope" value="За текущий месяц">
-									</dt>
-									<dd>
-										<div class="select-options">
-											<div class="scroll-cont scrollbar-inner">
-												<a data-value="a">За текущий месяц</a>
-												<a data-value="b" >За прошлый месяц</a>
-											</div>
-										</div>
-									</dd>
-								</dl>
-							</div>
-						</div>
-						<div class="row date-picker">
-							<div class="input-block">
-								<input type="text" id="input_1" name="input_1" value="01.06.2018">
-							</div>
-							<div class="divider"></div>
-							<div class="input-block">
-								<input type="text" id="input_2" name="input_2" value="01.07.2018">
-							</div>
-						</div>
-					</div>
-					<div class="filter-block time">
-						<label>Время</label>
-						<div class="row">
-							<div class="input-block">
-								<input type="text" id="input_1" name="input_1" value="00:00:00">
-							</div>
-							<div class="divider"></div>
-							<div class="input-block">
-								<input type="text" id="input_2" name="input_2" value="00:00:00">
-							</div>
-						</div>
-					</div>
-					<div class="filter-block type">
-						<label>Тип звонка</label>
-						<div class="row">
-							<div class="base-checkbox">
-								<input type="checkbox" id="flt1" name="flt1">
-								<label for="flt1">
-									<div class="check"></div>
-									<span>Входяший</span>
-								</label>
-							</div>
-							<div class="base-checkbox">
-								<input type="checkbox" id="flt12" name="flt12">
-								<label for="flt12">
-									<div class="check"></div>
-									<span>Исходящий</span>
-								</label>
-							</div>
-							<div class="base-checkbox">
-								<input type="checkbox" id="flt13" name="flt13">
-								<label for="flt13">
-									<div class="check"></div>
-									<span>Внутренний</span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filter-block number">
-						<label>Номер</label>
-						<div class="input-block">
-							<input type="text" id="input_122" name="input_122" value="">
-						</div>
-					</div>
-					<div class="filter-block internal-nums">
-						<label>Внутренние номера</label>
-						<div class="input-block">
-							<input type="text" id="input_123" name="input_123" value="">
-						</div>
-					</div>
-					<div class="filter-block externals-nums">
-						<label>Внешний номер или его часть</label>
-						<div class="input-block">
-							<input type="text" id="input_1234" name="input_1234" value="">
-						</div>
-					</div>
-					<div class="filter-block status">
-						<label>Статус звонков</label>
-						<div class="row">
-							<div class="base-checkbox">
-								<input type="checkbox" id="flt17" name="flt17">
-								<label for="flt17">
-									<div class="check"></div>
-									<span>Принятый</span>
-								</label>
-							</div>
-							<div class="base-checkbox">
-								<input type="checkbox" id="flt127" name="flt127">
-								<label for="flt127">
-									<div class="check"></div>
-									<span>Пропущенный</span>
-								</label>
-							</div>
-							<div class="base-checkbox">
-								<input type="checkbox" id="flt137" name="flt137">
-								<label for="flt137">
-									<div class="check"></div>
-									<span>Дозвонился</span>
-								</label>
-							</div>
-							<div class="base-checkbox">
-								<input type="checkbox" id="flt1378" name="flt1378">
-								<label for="flt1378">
-									<div class="check"></div>
-									<span>Не дозвонился</span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filter-block btn-row">
-						<button class="btn base-btn outline">Сбросить фильтры</button>
-					</div>
-				</div>
-			</aside>
-			<section class="reports__page__content">
+			<section class="reports__page__content" style="width: 100%">
 				<div class="reports__page__content--header">
 					<div class="select-block report-type--links">
 						<dl class="select select-filter select-flag scrollable">
@@ -813,108 +670,17 @@
 							<dd>
 								<div class="select-options">
 									<div class="scroll-cont">
-										<a href="calls.html">Звонки</a>
-										<a href="call-tracking.html" >Колл-Трекинг</a>
+										<a href="callRecord.html">Звонки</a>
+										<a href="callTracking.html" >Колл-Трекинг</a>
+										<a href="#" >Автообзвон</a>
+										<a href="#" >Файлы отчетов</a>
 									</div>
 								</div>
 							</dd>
 						</dl>
 					</div>
 					<div class="page-title">
-						Звонки
-					</div>
-				</div>
-				<div class="reports__page__content--chart">
-					<div class="reports__page__content--chart__header">
-						<div class="select-block group-by">
-							<label>групировать по</label>
-							<dl class="select select-filter select-flag scrollable">
-								<dt class="">
-									<input type="text" name="scope" value="Дням">
-								</dt>
-								<dd>
-									<div class="select-options">
-										<div class="scroll-cont scrollbar-inner">
-											<a data-value="a">Месяцам</a>
-											<a data-value="b">Годам</a>
-										</div>
-									</div>
-								</dd>
-							</dl>
-						</div>
-						<button class="btn excel-btn">
-							<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<path style="fill:#ECEFF1;" d="M496,432.011H272c-8.832,0-16-7.168-16-16s0-311.168,0-320s7.168-16,16-16h224
-	c8.832,0,16,7.168,16,16v320C512,424.843,504.832,432.011,496,432.011z"/>
-<g>
-	<path style="fill:#388E3C;" d="M336,176.011h-64c-8.832,0-16-7.168-16-16s7.168-16,16-16h64c8.832,0,16,7.168,16,16
-		S344.832,176.011,336,176.011z"/>
-	<path style="fill:#388E3C;" d="M336,240.011h-64c-8.832,0-16-7.168-16-16s7.168-16,16-16h64c8.832,0,16,7.168,16,16
-		S344.832,240.011,336,240.011z"/>
-	<path style="fill:#388E3C;" d="M336,304.011h-64c-8.832,0-16-7.168-16-16s7.168-16,16-16h64c8.832,0,16,7.168,16,16
-		S344.832,304.011,336,304.011z"/>
-	<path style="fill:#388E3C;" d="M336,368.011h-64c-8.832,0-16-7.168-16-16s7.168-16,16-16h64c8.832,0,16,7.168,16,16
-		S344.832,368.011,336,368.011z"/>
-	<path style="fill:#388E3C;" d="M432,176.011h-32c-8.832,0-16-7.168-16-16s7.168-16,16-16h32c8.832,0,16,7.168,16,16
-		S440.832,176.011,432,176.011z"/>
-	<path style="fill:#388E3C;" d="M432,240.011h-32c-8.832,0-16-7.168-16-16s7.168-16,16-16h32c8.832,0,16,7.168,16,16
-		S440.832,240.011,432,240.011z"/>
-	<path style="fill:#388E3C;" d="M432,304.011h-32c-8.832,0-16-7.168-16-16s7.168-16,16-16h32c8.832,0,16,7.168,16,16
-		S440.832,304.011,432,304.011z"/>
-	<path style="fill:#388E3C;" d="M432,368.011h-32c-8.832,0-16-7.168-16-16s7.168-16,16-16h32c8.832,0,16,7.168,16,16
-		S440.832,368.011,432,368.011z"/>
-</g>
-<path style="fill:#2E7D32;" d="M282.208,19.691c-3.648-3.04-8.544-4.352-13.152-3.392l-256,48C5.472,65.707,0,72.299,0,80.011v352
-	c0,7.68,5.472,14.304,13.056,15.712l256,48c0.96,0.192,1.952,0.288,2.944,0.288c3.712,0,7.328-1.28,10.208-3.68
-	c3.68-3.04,5.792-7.584,5.792-12.32v-448C288,27.243,285.888,22.731,282.208,19.691z"/>
-<path style="fill:#FAFAFA;" d="M220.032,309.483l-50.592-57.824l51.168-65.792c5.44-6.976,4.16-17.024-2.784-22.464
-	c-6.944-5.44-16.992-4.16-22.464,2.784l-47.392,60.928l-39.936-45.632c-5.856-6.72-15.968-7.328-22.56-1.504
-	c-6.656,5.824-7.328,15.936-1.504,22.56l44,50.304L83.36,310.187c-5.44,6.976-4.16,17.024,2.784,22.464
-	c2.944,2.272,6.432,3.36,9.856,3.36c4.768,0,9.472-2.112,12.64-6.176l40.8-52.48l46.528,53.152
-	c3.168,3.648,7.584,5.504,12.032,5.504c3.744,0,7.488-1.312,10.528-3.968C225.184,326.219,225.856,316.107,220.032,309.483z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
-
-							<span>Сохранить как Excel файл</span>
-						</button>
-					</div>
-					<div class="reports__page__content--chart__mobile">
-						*Диаграмма отчетов доступна в десктопной версии личного кабинета
-					</div>
-					<div class="reports__page__content--chart__body">
-						<img src="../assets/img/chart1.png" alt="">
+						Файлы отчетов
 					</div>
 				</div>
 				<div class="reports__page__content--tbl-cntr">
@@ -923,175 +689,121 @@
 							<table class="base-table">
 								<thead>
 									<tr>
-										<td>Время звонка</td>
-										<td>Звонок с</td>
-										<td>Звонок на</td>
-										<td>Переадресация</td>
-										<td>Длительность</td>
-										<td>Запись</td>
+										<td>Дата</td>
+										<td>Тип</td>
+										<td>Сотрудник</td>
+										<td>Статус</td>
+										<td></td>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>
 											<div class="call-time">
-												<span class="date">20.05.2018</span>
-												<span class="time">16:10:17 <span class="zone">(+03:00)</span></span>
+												<span class="date">06.02.2020</span>
+												<span class="time">16:10:17</span>
 											</div>
 										</td>
-										<td>+7 (499) 955-32-11</td>
-										<td>+7 (239) 823-98-00</td>
-										<td></td>
-										<td>00:00</td>
+										<td>Звонки</td>
+										<td>Олег Мих</td>
+										<td>Сгенерирован</td>
 										<td>
-											<div class="action">
-												<button class="btn play-btn">
-													<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 30" style="enable-background:new 0 0 24 30;" xml:space="preserve">
-<g>
-	<polygon points="24,15 0,0 0,30 	"/>
-</g>
-</svg>
-
-												</button>
-												<button class="btn download-btn">
-													<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 12 15" style="enable-background:new 0 0 12 15;" xml:space="preserve">
-<g>
-	<polygon points="6,12.5 11,7.5 1,7.5 	"/>
-	<rect x="4" width="4" height="10"/>
-</g>
-<rect y="13" width="12" height="2"/>
-</svg>
-
-												</button>
-											</div>
-											
+											<button class="btn base-btn download-file-btn">Скачать файл</button>
 										</td>
 									</tr>
+									<!--  -->
+								</tbody>
+							</table>
+						</div>
+						<div class="base-pagination">
+							<div class="page-count">
+								<dl class="select select-filter select-flag scrollable fill">
+									<dt class="">
+										<input type="text" name="scope" class="required" value="10">
+									</dt>
+									<dd>
+										<div class="select-options">
+											<div class="scroll-cont scrollbar-inner">
+												<a data-value="10">10</a>
+												<a data-value="20" >20</a>
+												<a data-value="50" >50</a>
+												<a data-value="100" >100</a>
+												<a data-value="200" >200</a>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="page-btns">
+								<button class="btn first disabled">
+									Первая
+								</button>
+								<button class="btn prev disabled">
+									Предыдущая
+								</button>
+								<button class="btn next">
+									Следующая
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="reports__page__content--table --mobile">
+						<div class="table-body scrollbar-inner">
+							<table class="base-table">
+								<tbody>
 									<tr>
 										<td>
-											<div class="call-time">
-												<span class="date">20.05.2018</span>
-												<span class="time">16:10:17 <span class="zone">(+03:00)</span></span>
+											<div class="row">
+												<div class="btn maximize-row-btn">
+													<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 15 9" style="enable-background:new 0 0 15 9;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<polyline class="st0" points="1.1,1.5 7.5,7.5 13.9,1.5 "/>
+<g>
+	<polygon points="7.5,8.8 0,1.7 1.5,0.2 7.5,5.9 13.5,0.2 15,1.7 	"/>
+</g>
+</svg>
+
+												</div>
+												<div class="td-block">
+													<div class="label">Дата</div>
+													<div class="data">
+														<div class="call-time">
+															<span class="date">20.05.2018</span>
+															<span class="time">16:10:17 <span class="zone">(+03:00)</span></span>
+														</div>
+													</div>
+												</div>
+												<div class="td-block">
+													<div class="label">Тип</div>
+													<div class="data">
+														Звонки
+													</div>
+												</div>
 											</div>
-										</td>
-										<td>+7 (499) 955-32-11</td>
-										<td>+7 (239) 823-98-00</td>
-										<td></td>
-										<td>00:00</td>
-										<td>
-											<div class="action">
-												<button class="btn play-btn">
-													<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 30" style="enable-background:new 0 0 24 30;" xml:space="preserve">
-<g>
-	<polygon points="24,15 0,0 0,30 	"/>
-</g>
-</svg>
-
-												</button>
-												<button class="btn download-btn">
-													<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 12 15" style="enable-background:new 0 0 12 15;" xml:space="preserve">
-<g>
-	<polygon points="6,12.5 11,7.5 1,7.5 	"/>
-	<rect x="4" width="4" height="10"/>
-</g>
-<rect y="13" width="12" height="2"/>
-</svg>
-
-												</button>
-											</div>
-											
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="call-time">
-												<span class="date">20.05.2018</span>
-												<span class="time">16:10:17 <span class="zone">(+03:00)</span></span>
-											</div>
-										</td>
-										<td>+7 (499) 955-32-11</td>
-										<td>+7 (239) 823-98-00</td>
-										<td></td>
-										<td>00:00</td>
-										<td>
-											<div class="action">
-												<button class="btn play-btn">
-													<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 30" style="enable-background:new 0 0 24 30;" xml:space="preserve">
-<g>
-	<polygon points="24,15 0,0 0,30 	"/>
-</g>
-</svg>
-
-												</button>
-												<button class="btn download-btn">
-													<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 12 15" style="enable-background:new 0 0 12 15;" xml:space="preserve">
-<g>
-	<polygon points="6,12.5 11,7.5 1,7.5 	"/>
-	<rect x="4" width="4" height="10"/>
-</g>
-<rect y="13" width="12" height="2"/>
-</svg>
-
-												</button>
-											</div>
-											
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="call-time">
-												<span class="date">20.05.2018</span>
-												<span class="time">16:10:17 <span class="zone">(+03:00)</span></span>
-											</div>
-										</td>
-										<td>+7 (499) 955-32-11</td>
-										<td>+7 (239) 823-98-00</td>
-										<td></td>
-										<td>00:00</td>
-										<td>
-											<div class="action">
-												<button class="btn play-btn">
-													<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 30" style="enable-background:new 0 0 24 30;" xml:space="preserve">
-<g>
-	<polygon points="24,15 0,0 0,30 	"/>
-</g>
-</svg>
-
-												</button>
-												<button class="btn download-btn">
-													<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 12 15" style="enable-background:new 0 0 12 15;" xml:space="preserve">
-<g>
-	<polygon points="6,12.5 11,7.5 1,7.5 	"/>
-	<rect x="4" width="4" height="10"/>
-</g>
-<rect y="13" width="12" height="2"/>
-</svg>
-
-												</button>
+											<div class="collapse-block">
+												<div class="td-block">
+													<div class="label">Сотрудник</div>
+													<div class="data">
+														Олег Мих
+													</div>
+												</div>
+												<div class="td-block">
+													<div class="label">Статус</div>
+													<div class="data">
+														Сгенерирован
+													</div>
+												</div>
+												<div class="td-block">
+													<div class="label"></div>
+													<div class="data">
+														<button class="btn base-btn download-file-btn">Скачать файл</button>
+													</div>
+												</div>
 											</div>
 											
 										</td>
@@ -1132,227 +844,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="reports__page__content--table --mobile">
-							<div class="table-body scrollbar-inner">
-								<table class="base-table">
-									<tbody>
-										<tr>
-											<td>
-												<div class="row">
-													<div class="btn maximize-row-btn">
-														<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 15 9" style="enable-background:new 0 0 15 9;" xml:space="preserve">
-<style type="text/css">
-	.st0{display:none;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-</style>
-<polyline class="st0" points="1.1,1.5 7.5,7.5 13.9,1.5 "/>
-<g>
-	<polygon points="7.5,8.8 0,1.7 1.5,0.2 7.5,5.9 13.5,0.2 15,1.7 	"/>
-</g>
-</svg>
-
-													</div>
-													<div class="td-block">
-														<div class="label">Время звонка</div>
-														<div class="data">
-															<div class="call-time">
-																<span class="date">20.05.2018</span>
-																<span class="time">16:10:17 <span class="zone">(+03:00)</span></span>
-															</div>
-														</div>
-													</div>
-													<div class="td-block">
-														<div class="label">Звонок с</div>
-														<div class="data">
-															+7 (499) 955-32-11
-														</div>
-													</div>
-												</div>
-												<div class="collapse-block">
-													<div class="td-block">
-														<div class="label">Звонок на</div>
-														<div class="data">
-															+7 (239) 823-98-00
-														</div>
-													</div>
-													<div class="td-block">
-														<div class="label">Переадресация</div>
-														<div class="data">
-															-
-														</div>
-													</div>
-													<div class="td-block">
-														<div class="label">Длительность</div>
-														<div class="data">
-															00:00
-														</div>
-													</div>
-													<div class="td-block">
-														<div class="label">Запись</div>
-														<div class="data">
-															<div class="action">
-																<button class="btn play-btn">
-																	<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 30" style="enable-background:new 0 0 24 30;" xml:space="preserve">
-<g>
-	<polygon points="24,15 0,0 0,30 	"/>
-</g>
-</svg>
-
-																</button>
-																<button class="btn download-btn">
-																	<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 12 15" style="enable-background:new 0 0 12 15;" xml:space="preserve">
-<g>
-	<polygon points="6,12.5 11,7.5 1,7.5 	"/>
-	<rect x="4" width="4" height="10"/>
-</g>
-<rect y="13" width="12" height="2"/>
-</svg>
-
-																</button>
-															</div>
-														</div>
-													</div>
-												</div>
-												
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="row">
-													<div class="btn maximize-row-btn">
-														<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 15 9" style="enable-background:new 0 0 15 9;" xml:space="preserve">
-<style type="text/css">
-	.st0{display:none;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-</style>
-<polyline class="st0" points="1.1,1.5 7.5,7.5 13.9,1.5 "/>
-<g>
-	<polygon points="7.5,8.8 0,1.7 1.5,0.2 7.5,5.9 13.5,0.2 15,1.7 	"/>
-</g>
-</svg>
-
-													</div>
-													<div class="td-block">
-														<div class="label">Время звонка</div>
-														<div class="data">
-															<div class="call-time">
-																<span class="date">20.05.2018</span>
-																<span class="time">16:10:17 <span class="zone">(+03:00)</span></span>
-															</div>
-														</div>
-													</div>
-													<div class="td-block">
-														<div class="label">Звонок с</div>
-														<div class="data">
-															+7 (499) 955-32-11
-														</div>
-													</div>
-												</div>
-												<div class="collapse-block">
-													<div class="td-block">
-														<div class="label">Звонок на</div>
-														<div class="data">
-															+7 (239) 823-98-00
-														</div>
-													</div>
-													<div class="td-block">
-														<div class="label">Переадресация</div>
-														<div class="data">
-															-
-														</div>
-													</div>
-													<div class="td-block">
-														<div class="label">Длительность</div>
-														<div class="data">
-															00:00
-														</div>
-													</div>
-													<div class="td-block">
-														<div class="label">Запись</div>
-														<div class="data">
-															<div class="action">
-																<button class="btn play-btn">
-																	<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 30" style="enable-background:new 0 0 24 30;" xml:space="preserve">
-<g>
-	<polygon points="24,15 0,0 0,30 	"/>
-</g>
-</svg>
-
-																</button>
-																<button class="btn download-btn">
-																	<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 12 15" style="enable-background:new 0 0 12 15;" xml:space="preserve">
-<g>
-	<polygon points="6,12.5 11,7.5 1,7.5 	"/>
-	<rect x="4" width="4" height="10"/>
-</g>
-<rect y="13" width="12" height="2"/>
-</svg>
-
-																</button>
-															</div>
-														</div>
-													</div>
-												</div>
-												
-											</td>
-										</tr>
-										<!--  -->
-										<!--  -->
-									</tbody>
-								</table>
-							</div>
-							<div class="base-pagination">
-								<div class="page-btns">
-									<button class="btn prev">
-										Пред.
-									</button>
-									<button class="btn num active">1</button>
-									<button class="btn num">2</button>
-									<button class="btn num">3</button>
-									<button class="btn num">4</button>
-									<button class="btn num">...</button>
-									<button class="btn num">78</button>
-									<button class="btn next">
-										След.
-									</button>
-								</div>
-								<div class="page-count">
-									<span>показать</span>
-									<dl class="select select-filter select-flag scrollable fill">
-										<dt class="">
-											<input type="text" name="scope" class="required" value="10">
-										</dt>
-										<dd>
-											<div class="select-options">
-												<div class="scroll-cont scrollbar-inner">
-													<a data-value="10">10</a>
-													<a data-value="20" >20</a>
-													<a data-value="50" >50</a>
-													<a data-value="100" >100</a>
-													<a data-value="200" >200</a>
-												</div>
-											</div>
-										</dd>
-									</dl>
-								</div>
-							</div>
-					</div>
 				</div>
 			</section>
 		</div>
@@ -1385,7 +876,7 @@
     });
   });
 
-  // Collapse filters 
+   // Collapse filters 
 	$('.btn.maximize-filters').on('click', function (e) {
 		var block = $(this).closest('.reports__page__filters__header');
 		block.parent().find('.container').slideToggle()

@@ -133,6 +133,8 @@
       display: inline-block;
       position: relative;
       margin-bottom: 0; }
+      .reports__page__content .report-type--links .select.select-filter dt {
+        border-color: #313131 !important; }
       .reports__page__content .report-type--links dt {
         padding: 10px 15px !important;
         width: 200px;
@@ -144,7 +146,8 @@
         -webkit-box-align: center;
         -webkit-align-items: center;
             -ms-flex-align: center;
-                align-items: center; }
+                align-items: center;
+        border-color: #313131 !important; }
         .reports__page__content .report-type--links dt:before {
           border-top-color: #fff !important; }
         .reports__page__content .report-type--links dt svg {
@@ -161,7 +164,10 @@
       font-weight: 700;
       display: inline-block;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      -webkit-transform: translateX(-100px);
+          -ms-transform: translateX(-100px);
+              transform: translateX(-100px); }
     .reports__page__content--chart {
       width: 100%; }
       .reports__page__content--chart__header {
@@ -293,6 +299,14 @@
               width: 12px; }
           .reports__page__content--table .base-table .action .download-btn svg {
             height: 17px; }
+        .reports__page__content--table .base-table .base-btn.download-file-btn {
+          background: #69b7e8;
+          border-radius: 30px;
+          padding: 8px 15px;
+          font-family: Montserrat;
+          font-style: 14px;
+          font-weight: 500;
+          color: #fff; }
       .reports__page__content--table .base-pagination {
         margin-top: 30px; }
         .reports__page__content--table .base-pagination .btn {
@@ -394,7 +408,10 @@
     margin-bottom: 20px; }
   .reports__page__content .page-title {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
   .reports__page__content--chart__mobile {
     display: block; }
   .reports__page__content--chart .btn.excel-btn {
