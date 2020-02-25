@@ -621,6 +621,28 @@ body {
     opacity: 1;
     visibility: visible; }
 
+.tooltip-faq-dot {
+  width: 15px;
+  height: 15px;
+  background: #e2e2e2;
+  border-radius: 50%;
+  line-height: 15px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: #313131;
+  cursor: pointer;
+  -webkit-transition: .35s ease;
+  -o-transition: .35s ease;
+  transition: .35s ease; }
+  .tooltip-faq-dot:hover {
+    background: #ffd802; }
+  .tooltip-faq-dot:after {
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: left;
+    background: rgba(23, 23, 23, 0.9); }
+
 .btn.base-btn {
   font-size: 14px;
   color: #151515;
