@@ -49,7 +49,19 @@
       max-width: 320px;
       padding: 15px 10px;
       margin-bottom: 30px; }
-    .callSchema__page--sidebar .base-tab__body .base-tab__block form.form-container {
+      .callSchema__page--sidebar .base-tab__body .base-tab__block form.main-form .select.select-flag dd .select-options a.current {
+        color: #f18a17;
+        position: relative;
+        padding-right: 25px; }
+        .callSchema__page--sidebar .base-tab__body .base-tab__block form.main-form .select.select-flag dd .select-options a.current:before {
+          content: '';
+          position: absolute;
+          right: 10px;
+          top: 7px;
+          width: 15px;
+          height: 15px;
+          background: url(../img/svg/current-select.svg) 100% 100%; }
+    .callSchema__page--sidebar .base-tab__body .base-tab__block .form-container {
       border-radius: 4px;
       background: #fff;
       border: solid 1px #eee;
