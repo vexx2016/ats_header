@@ -43,6 +43,10 @@
       margin: 0 25px 0 0; }
       .callSchema__page--sidebar .base-tab__header .btn:last-of-type {
         margin-right: 0; }
+    .callSchema__page--sidebar .base-tab__body .base-tab__block .select.scrollable.scrollable .scroll-cont {
+      max-height: 250px; }
+      .callSchema__page--sidebar .base-tab__body .base-tab__block .select.scrollable.scrollable .scroll-cont a {
+        min-height: 35px; }
     .callSchema__page--sidebar .base-tab__body .base-tab__block form.main-form {
       border-radius: 4px;
       background: #f7f7f7;
@@ -93,7 +97,7 @@
     position: relative; }
     .callSchema__page--scheme-section__inner {
       min-height: 100vh; }
-    .callSchema__page--scheme-section__download-btn {
+    .callSchema__page--scheme-section__save-btn {
       position: absolute;
       left: 25px;
       top: 25px;
@@ -104,12 +108,12 @@
       padding: 0 !important;
       -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.14);
               box-shadow: 0 2px 10px rgba(0, 0, 0, 0.14); }
-      .callSchema__page--scheme-section__download-btn svg {
+      .callSchema__page--scheme-section__save-btn svg {
         position: absolute;
-        max-width: 22px;
-        max-height: 22px;
-        left: 6px;
-        top: 5px; }
+        max-width: 18px;
+        max-height: 18px;
+        left: 8px;
+        top: 8px; }
     .callSchema__page--scheme-section .scroll-wrapper.scrollbar-inner {
       height: 100%; }
     .callSchema__page--scheme-section .canvas-image {

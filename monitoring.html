@@ -639,8 +639,8 @@
 						</div>
 					</div>
 					<div class="base-checkbox">
-						<input type="checkbox" id="flt17" name="flt17">
-						<label for="flt17">
+						<input type="checkbox" id="tableSummary-check" name="tableSummary-check">
+						<label for="tableSummary-check">
 							<div class="check"></div>
 							<span>показать итого</span>
 						</label>
@@ -736,6 +736,42 @@
 									<!--  -->
 									<!--  -->
 								</tbody>
+								<tfoot>
+									<tr>
+										<td>
+											<div class="td-block">
+												<!-- <div class="label"></div> -->
+												<div class="data">Итого</div>
+											</div>
+											<div class="td-block">
+												<div class="label">Поступило звонков</div>
+												<div class="data">
+													<span class="green">0<span class="super">(0.00%)</span></span>
+												</div>
+											</div>
+											<div class="td-block">
+												<div class="label">Принятых звонков</div>
+												<div class="data">
+													<span class="red">0.00<span class="super">(0.00%)</span></span>
+												</div>
+											</div>
+											<div class="td-block">
+												<div class="label">Среднее время ответа</div>
+												<div class="data">
+													<span class="red">0 сек.<span class="super">(0 сек.)</span></span>
+												</div>
+											</div>
+											<div class="td-block">
+												<div class="label">Средняя длительность разговора</div>
+												<div class="data">
+													<span class="">0 мин. 0 сек.<span class="super">(0 сек.)</span></span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<!--  -->
+									<!--  -->
+								</tfoot>
 							</table>
 						</div>
 				</div>
@@ -2010,6 +2046,19 @@
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollbar.min.js"></script>
+<script>
+	// table summary
+	var ts_check = document.querySelector('#tableSummary-check');
+	ts_check.onchange= function() {
+		if (this.checked) {
+			document.querySelector('.monitoring__page__situation__table.--desktop').classList.add('with-summary');
+			document.querySelector('.monitoring__page__situation__table.--mobile').classList.add('with-summary');
+		}else{
+			document.querySelector('.monitoring__page__situation__table.--desktop').classList.remove('with-summary');
+			document.querySelector('.monitoring__page__situation__table.--mobile').classList.remove('with-summary');
+		}
+	};
+</script>
 <script>
 	// HEADER
 	function langToggle(event){
