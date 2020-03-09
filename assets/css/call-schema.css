@@ -675,27 +675,52 @@
   .callScheme__point.w-connection.w-c__down-duo .connection-line {
     position: absolute;
     top: calc(100% + 5px);
-    left: 0;
-    right: 0;
-    background: #d8d8d8;
-    height: 1px; }
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 1px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .callScheme__point.w-connection.w-c__down-duo .connection-line .lft {
-      position: absolute;
-      top: -1px;
-      width: 1px;
-      height: 10px;
+      width: 30px;
       background: #d8d8d8;
-      left: -3px;
-      -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-              transform: rotate(45deg); }
+      height: 1px;
+      position: relative;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .callScheme__point.w-connection.w-c__down-duo .connection-line .lft:before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        width: 1px;
+        height: 10px;
+        background: #d8d8d8;
+        left: -4px;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
     .callScheme__point.w-connection.w-c__down-duo .connection-line .rght {
-      position: absolute;
-      top: -1px;
-      width: 1px;
-      height: 10px;
+      width: 30px;
       background: #d8d8d8;
-      right: -3px;
-      -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
+      height: 1px;
+      position: relative; }
+      .callScheme__point.w-connection.w-c__down-duo .connection-line .rght:before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        width: 1px;
+        height: 10px;
+        background: #d8d8d8;
+        right: -4px;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }

@@ -447,44 +447,46 @@
     width: 100%;
     margin-bottom: 20px; }
 
-.request-numbers_popup .request_popup__numbers .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-  .request-numbers_popup .request_popup__numbers .row:not(:last-child) {
-    border-bottom: solid 1px #eee;
-    margin-bottom: 10px;
-    padding-bottom: 5px; }
+.request-numbers_popup .base-popup__container {
+  max-height: 90vh; }
 
-.request-numbers_popup .request_popup__numbers .num {
-  font-size: 18px;
-  width: 60%;
-  min-width: 200px;
-  margin-bottom: 5px; }
-
-.request-numbers_popup .request_popup__numbers .status {
-  width: 40%;
-  margin-bottom: 5px; }
-
-.request-numbers_popup .request_popup__numbers .tag {
-  font-size: 13px;
-  padding: 2px 5px;
-  background: #eee;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border-radius: 3px; }
-  .request-numbers_popup .request_popup__numbers .tag.green {
-    background: rgba(6, 148, 5, 0.1);
-    color: #069405; }
-  .request-numbers_popup .request_popup__numbers .tag.red {
-    background: rgba(255, 1, 1, 0.1);
-    color: #ff0101; }
+.request-numbers_popup .request_popup__numbers {
+  max-height: 55vh !important; }
+  .request-numbers_popup .request_popup__numbers .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .request-numbers_popup .request_popup__numbers .row:not(:last-child) {
+      border-bottom: solid 1px #eee;
+      margin-bottom: 10px;
+      padding-bottom: 5px; }
+  .request-numbers_popup .request_popup__numbers .num {
+    font-size: 18px;
+    width: 60%;
+    min-width: 200px;
+    margin-bottom: 5px; }
+  .request-numbers_popup .request_popup__numbers .status {
+    width: 40%;
+    margin-bottom: 5px; }
+  .request-numbers_popup .request_popup__numbers .tag {
+    font-size: 13px;
+    padding: 2px 5px;
+    background: #eee;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border-radius: 3px; }
+    .request-numbers_popup .request_popup__numbers .tag.green {
+      background: rgba(6, 148, 5, 0.1);
+      color: #069405; }
+    .request-numbers_popup .request_popup__numbers .tag.red {
+      background: rgba(255, 1, 1, 0.1);
+      color: #ff0101; }
 
 .connect-external_popup .base-popup__container {
   max-width: 450px; }
