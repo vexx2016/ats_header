@@ -2009,6 +2009,28 @@ body {
   right: 0;
   top: 0;
   width: 2px; }
+  .scrollbar-inner > .scroll-element.scroll-y .scroll-bar {
+    cursor: pointer; }
+  .scrollbar-inner > .scroll-element.scroll-y:before {
+    content: '';
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0); }
+  .scrollbar-inner > .scroll-element.scroll-y:hover {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transform: scaleX(10);
+        -ms-transform: scaleX(10);
+            transform: scaleX(10); }
+    .scrollbar-inner > .scroll-element.scroll-y:hover:before {
+      -webkit-transition: .35s ease;
+      -o-transition: .35s ease;
+      transition: .35s ease;
+      width: 0; }
 
 .scrollbar-inner > .scroll-element .scroll-element_outer {
   overflow: hidden; }
