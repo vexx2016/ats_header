@@ -1828,7 +1828,7 @@
 								</button>
 							</div>
 							<div class="scheme_popup__body">
-								<button class="scheme_popup__btn" data-config="readdress" onclick="openSchemeItemConfig(event)">
+								<button class="scheme_popup__btn" data-config="readdress" onclick="openSchemeItemConfig(event)" disabled>
 									<span class="ico">
 										<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -1844,7 +1844,7 @@
 									</span>
 									<span class="title">Перевод звонка на кого-то</span>
 								</button>
-								<button class="scheme_popup__btn" data-config="audio-message" onclick="openSchemeItemConfig(event)">
+								<button class="scheme_popup__btn" data-config="audio-message" onclick="openSchemeItemConfig(event)" disabled>
 									<span class="ico">
 										<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -2407,7 +2407,7 @@
 						<!-- <img src="assets/img/callscheme.png" alt="" class="canvas-image"> -->
 						<div class="callScheme-example">
 							<div class="row">
-								<div class="callScheme__point start-call">
+								<div class="callScheme__point start-call" data-config="start-call" onclick="openSchemeItemConfigEdit(event)">
 									
 									<span class="ico">
 										<?xml version="1.0" encoding="iso-8859-1"?>
@@ -2466,7 +2466,7 @@
 								<button class="btn base-btn scheme_ppp-open-btn" onclick="openSchemePopup(event)">+</button>
 							</div>
 							<div class="row">
-								<div class="callScheme__point">
+								<div class="callScheme__point" data-config="time-check" onclick="openSchemeItemConfigEdit(event)">
 									
 									<span class="ico">
 										<?xml version="1.0" encoding="iso-8859-1"?>
@@ -2543,7 +2543,7 @@
 								<button class="btn base-btn scheme_ppp-open-btn" onclick="openSchemePopup(event)" style="margin:0 5px;">+</button>
 							</div>
 							<div class="row" style="max-width: 590px;justify-content: space-between;">
-								<div class="callScheme__point">
+								<div class="callScheme__point" data-config="voice-menu" onclick="openSchemeItemConfigEdit(event)">
 									<span class="ico">
 										<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -2594,7 +2594,7 @@
 										Голосовое меню
 									</span>
 								</div>
-								<div class="callScheme__point">
+								<div class="callScheme__point" data-config="time-check" onclick="openSchemeItemConfigEdit(event)">
 									<span class="ico">
 										<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -2948,6 +2948,21 @@
 		}
 	}
 	// 
+
+	function openSchemeItemConfigEdit(event) {
+		if(document.querySelector('.callScheme__point.active') && !event.currentTarget.classList.contains('active')){
+			document.querySelector('.callScheme__point.active').classList.remove('active');
+			document.querySelector('.callSchema__page--configs.active').classList.remove('active');
+			document.querySelector('.callSchema__page--configs').setAttribute('data-config', '');
+		}
+		event.currentTarget.classList.toggle('active');
+		document.querySelector('.callSchema__page--configs').classList.toggle('active');
+		// 
+		if(event.currentTarget.classList.contains('active')){
+			var configName = event.currentTarget.getAttribute('data-config');
+			document.querySelector('.callSchema__page--configs').setAttribute('data-config', configName);
+		}
+	}
 	function openSchemeItemConfig(event) {
 		if(document.querySelector('.scheme_popup__btn.active') && !event.currentTarget.classList.contains('active')){
 			document.querySelector('.scheme_popup__btn.active').classList.remove('active');

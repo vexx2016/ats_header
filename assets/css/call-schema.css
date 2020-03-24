@@ -314,6 +314,13 @@
     -o-transition: .35s ease;
     transition: .35s ease;
     margin-bottom: 5px; }
+    .scheme_popup__btn[disabled] {
+      cursor: auto;
+      pointer-events: none; }
+      .scheme_popup__btn[disabled] .ico {
+        background: #d6e9f5; }
+      .scheme_popup__btn[disabled] .title {
+        color: #aaa; }
     .scheme_popup__btn:hover {
       background: rgba(103, 181, 232, 0.1); }
     .scheme_popup__btn.active {
@@ -579,7 +586,27 @@
           justify-content: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px transparent;
+          box-shadow: 0 0 0 2px transparent; }
+  .callScheme__point:hover .ico {
+    -webkit-transform: scale(0.85);
+        -ms-transform: scale(0.85);
+            transform: scale(0.85); }
+  .callScheme__point:hover .title {
+    color: #67b5e8; }
+  .callScheme__point.active .ico {
+    -webkit-transform: scale(0.85);
+        -ms-transform: scale(0.85);
+            transform: scale(0.85);
+    background: transparent !important;
+    -webkit-box-shadow: 0 0 0 2px #67b5e8;
+            box-shadow: 0 0 0 2px #67b5e8; }
+    .callScheme__point.active .ico svg {
+      fill: #67b5e8 !important; }
+  .callScheme__point.active .title {
+    color: #67b5e8; }
   .callScheme__point.simple {
     width: 30px;
     height: 30px;
@@ -617,7 +644,10 @@
     border-radius: 50%;
     position: relative;
     display: block;
-    background: #67b5e8; }
+    background: #67b5e8;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
     .callScheme__point .ico svg {
       position: absolute;
       top: 50%;
@@ -655,7 +685,10 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 11px;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
   .callScheme__point.w-connection .callScheme__point--btn.btn.base-btn {
     position: absolute; }
   .callScheme__point.w-connection.w-c__down .callScheme__point--btn.btn.base-btn {
