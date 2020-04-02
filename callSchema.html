@@ -3229,6 +3229,10 @@
 	// 
 
 	function openSchemeItemConfigEdit(event) {
+		if(document.querySelector('.scheme_popup').classList.contains('active')){
+			document.querySelector('.callSchema__page--configs.active').classList.remove('active');
+			document.querySelector('.scheme_popup__btn.active').classList.remove('active');
+		}
 		if(document.querySelector('.callScheme--wrap .item.active') && !event.currentTarget.parentElement.classList.contains('active')){
 			document.querySelector('.callScheme--wrap .item.active').classList.remove('active');
 			document.querySelector('.callSchema__page--configs.active').classList.remove('active');
@@ -3243,6 +3247,11 @@
 		}
 	}
 	function openSchemeItemConfig(event) {
+		if(document.querySelector('.callScheme--wrap .item.active')){
+			document.querySelector('.callScheme--wrap .item.active').classList.remove('active');
+			document.querySelector('.callSchema__page--configs.active').classList.remove('active');
+			document.querySelector('.callSchema__page--configs').setAttribute('data-config', '');
+		}
 		if(document.querySelector('.scheme_popup__btn.active') && !event.currentTarget.classList.contains('active')){
 			document.querySelector('.scheme_popup__btn.active').classList.remove('active');
 			document.querySelector('.callSchema__page--configs.active').classList.remove('active');
