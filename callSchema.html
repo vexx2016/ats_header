@@ -2455,7 +2455,7 @@
 												<span class="counter"><span>1</span></span>
 											</i>
 											<div class="name ng-binding" ng-show="selected.schemaType == 'INBOUND'">Поступил новый звонок</div>
-											<button class="btn base-btn new-item--btn">+</button>
+											<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 										</div>
 										<div new-schema="" id="firstItem" buttons="1" ng-show="selected.callSchema != null" class="">
 											<div class="ng-scope">
@@ -2520,7 +2520,7 @@
 												<div class="yes-no cf spec-padding" buttons="2">
 													<div class="yes">
 														<i class="icon yes tech-begin ng-binding">Да</i>
-														<button class="btn base-btn new-item--btn">+</button>
+														<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 														<div class="ng-scope">
 															<div class="item cn-options ">
 																<i class="icon time-check" data-config="time-check" onclick="openSchemeItemConfigEdit(event)">
@@ -2583,7 +2583,7 @@
 															<div class="yes-no cf spec-padding" buttons="2">
 																<div class="yes">
 																	<i class="icon yes tech-begin ng-binding">Да</i>
-																	<button class="btn base-btn new-item--btn">+</button>
+																	<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																	<div class="ng-scope">
 																		<div class="item cn-up">
 																			<i class="icon time-check" data-config="time-check" onclick="openSchemeItemConfigEdit(event)">
@@ -2646,11 +2646,11 @@
 																		<div class="yes-no cf spec-padding" buttons="2">
 																			<div class="yes">
 																				<i class="icon yes tech-begin ng-binding">Да</i>
-																				<button class="btn base-btn new-item--btn">+</button>
+																				<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																			</div>
 																			<div class="no tech-end">
 																				<i class="icon no tech-end ng-binding">Нет</i>
-																				<button class="btn base-btn new-item--btn">+</button>
+																				<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																				<div class="ng-scope">
 																					<div class="item cn-options">
 																						<i class="icon voice-menu" data-config="voice-menu" onclick="openSchemeItemConfigEdit(event)">
@@ -2703,13 +2703,13 @@
 																						<div ng-repeat="(key, value) in node.digits" class="tech-menu ng-scope shown" ng-class="{shown: value.ready}" data-voice-counter="">
 																							<div class="yes shown" ng-show="value.digit != null &amp;&amp; key >= 0" ng-init="node.redrawEmpty=false">
 																								<i class="icon ng-binding">1</i>
-																								<button class="btn base-btn new-item--btn">+</button>
+																								<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																							</div>
 																						</div>
 																						<div ng-repeat="(key, value) in node.digits" class="tech-menu ng-scope shown" ng-class="{shown: value.ready}" data-voice-counter="">
 																							<div class="yes shown" ng-show="value.digit != null &amp;&amp; key >= 0" ng-init="node.redrawEmpty=false">
 																								<i class="icon ng-binding">2</i>
-																								<button class="btn base-btn new-item--btn">+</button>
+																								<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																								<div class="ng-scope">
 																									<div class="item cn-up" ng-class="nodeClass">
 																										<i class="icon fax" data-config="fax" onclick="openSchemeItemConfigEdit(event)">
@@ -2791,7 +2791,7 @@
 																						<div ng-repeat="(key, value) in node.digits" class="tech-menu ng-scope shown" ng-class="{shown: value.ready}" data-voice-counter="">
 																							<div class="yes shown" ng-show="value.digit != null &amp;&amp; key >= 0" ng-init="node.redrawEmpty=false">
 																								<i class="icon ng-binding">4</i>
-																								<button class="btn base-btn new-item--btn">+</button>
+																								<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																								<div class="ng-scope">
 																									<div class="item cn-up" ng-class="nodeClass">
 																										<i class="icon cancel" data-config="end-call" onclick="openSchemeItemConfigEdit(event)">
@@ -2853,7 +2853,7 @@
 																						</div>
 																						<div class="no tech-end">
 																							<i class="icon spec ng-binding">Без ввода</i>
-																							<button class="btn base-btn new-item--btn">+</button>
+																							<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																						</div>
 																						<div class="tech-line" ng-style="techLine" style="left: 27px;width: 421px;"></div>
 																					</div>
@@ -2865,7 +2865,7 @@
 																</div>
 																<div class="no tech-end">
 																	<i class="icon no tech-end ng-binding">Нет</i>
-																	<button class="btn base-btn new-item--btn">+</button>
+																	<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																	<div class="ng-scope">
 																		<div class="item cn-up-down" ng-class="nodeClass">
 																			<i class="icon audio-mes" data-config="audio-message" onclick="openSchemeItemConfigEdit(event)">
@@ -2922,7 +2922,7 @@
 																				<span class="counter"><span>6</span></span>
 																			</i>
 																			<div class="name ng-binding">Аудио-сообщение</div>
-																			<button class="btn base-btn new-item--btn">+</button>
+																			<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																		</div>
 																		<div buttons="1">
 																			<div class="ng-scope">
@@ -2987,11 +2987,11 @@
 																				<div class="yes-no cf spec-padding" buttons="2">
 																					<div class="yes">
 																						<i class="icon yes tech-begin ng-binding">Да</i>
-																						<button class="btn base-btn new-item--btn">+</button>
+																						<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																					</div>
 																					<div class="no tech-end">
 																						<i class="icon no tech-end ng-binding">Нет</i>
-																						<button class="btn base-btn new-item--btn">+</button>
+																						<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 																						<div class="ng-scope">
 																							<div class="item cn-up" ng-class="nodeClass">
 																								<i class="icon cancel" data-config="end-call" onclick="openSchemeItemConfigEdit(event)">
@@ -3062,7 +3062,7 @@
 													</div>
 													<div class="no tech-end">
 														<i class="icon no tech-end ng-binding">Нет</i>
-														<button class="btn base-btn new-item--btn">+</button>
+														<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 														<div class="ng-scope">
 															<div class="item cn-up-down" ng-class="nodeClass">
 																<i class="icon audio-mes" data-config="audio-message" onclick="openSchemeItemConfigEdit(event)">
@@ -3119,7 +3119,7 @@
 																	<span class="counter"><span>4</span></span>
 																</i>
 																<div class="name ng-binding">Аудио-сообщение</div>
-																<button class="btn base-btn new-item--btn">+</button>
+																<button class="btn base-btn new-item--btn" onclick="openSchemePopup(event)">+</button>
 															</div>
 															<div buttons="1">
 																<div class="ng-scope">
