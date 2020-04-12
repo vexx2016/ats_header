@@ -97,7 +97,28 @@
     height: calc(100vh - 77px);
     overflow: scroll;
     padding-left: 30px;
-    position: relative; }
+    position: relative;
+    cursor: -webkit-grab;
+    cursor: grab;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none; }
+    .callSchema__page--scheme-section .callScheme--wrap ::-moz-selection {
+      background-color: transparent; }
+    .callSchema__page--scheme-section .callScheme--wrap ::selection {
+      background-color: transparent; }
+    .callSchema__page--scheme-section .callScheme--wrap > * {
+      background-color: transparent; }
+    .callSchema__page--scheme-section.grabbing {
+      cursor: -webkit-grabbing;
+      cursor: grabbing; }
     .callSchema__page--scheme-section__inner {
       min-height: 100vh; }
       .callSchema__page--scheme-section__inner .callScheme--wrap .scheme-item {

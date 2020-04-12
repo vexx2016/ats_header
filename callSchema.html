@@ -1762,7 +1762,7 @@
 					</div>
 				</div>
 			</aside>
-			<section class="callSchema__page--scheme-section">
+			<section class="callSchema__page--scheme-section" onmousedown="grabScheme(event)" onmouseup="grabSchemeOut(event)" onmouseleave="grabSchemeOut(event)">
 				<div class="callSchema__page--scheme-section__save-btn btn base-btn">
 					<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -3264,6 +3264,32 @@
 			var configName = event.currentTarget.getAttribute('data-config');
 			document.querySelector('.callSchema__page--configs').setAttribute('data-config', configName);
 		}
+	}
+
+	// Cheme grabbing
+	var startX,
+		startY;
+	function grabScheme(event){
+		startX = event.pageX,
+		startY = event.pageY;
+		// console.log('=', startX,startY);
+		document.querySelector('.callSchema__page--scheme-section').classList.add('grabbing');
+		document.querySelector('.callSchema__page--scheme-section').addEventListener("mousemove", grabSchemeMove);
+	}
+	function grabSchemeOut(event){
+		document.querySelector('.callSchema__page--scheme-section').classList.remove('grabbing');
+		document.querySelector('.callSchema__page--scheme-section').removeEventListener("mousemove",  grabSchemeMove);
+	}
+	function grabSchemeMove(e){
+		e.preventDefault();
+		var container = document.querySelector('.callSchema__page--scheme-section .scrollbar-inner.scroll-content');
+		const x = e.pageX;
+		const y = e.pageY;
+		// console.log('---',y);
+		const walkX = (x - startX) * 0.045;
+		const walkY = (y - startY) * 0.045;
+		container.scrollLeft = container.scrollLeft - walkX;
+		container.scrollTop = container.scrollTop - walkY;
 	}
 	
 </script>
