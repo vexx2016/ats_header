@@ -612,7 +612,7 @@
 				<div class="scrollbar-inner main-scrollbar">
 					<div class="section-title">
 						Схема телефонии
-						<span class="base-tooltip tooltip-faq-dot" data-tooltip="В данном разделе вы можете настроить схему обработки входящих звонков вашей телефонии. Для каждого телефона используются...">?</span>
+						<span class="tooltip-faq-dot js-tooltip" title="В данном разделе вы можете настроить схему обработки входящих звонков вашей телефонии. Для каждого телефона используются...">?</span>
 					</div>
 					<div class="base-tab">
 						<div class="base-tab__header">
@@ -1628,7 +1628,10 @@
 						</div>
 						<!--  -->
 						<div class="config-form time-check">
-							<div class="section-title">Проверка по времени</div>
+							<div class="section-title">
+								Проверка по времени
+								<span class="tooltip-faq-dot js-tooltip" title="Установите различные проверки по датам и времени для распределения телефонного трафика">?</span>
+							</div>
 							<form action="">
 								<div class="input-block double-inputs">
 									<label for="tc-i-1">Время</label>
@@ -1659,52 +1662,412 @@
 								<div class="input-block double-radio">
 									<label>Дни недели</label>
 									<div class="base-radio">
-										<input type="radio" id="tc-r-1" name="time-check_d-weeks" value="">
-										<label for="tc-r-1">
+										<input type="radio" id="time-check_d-weeks-all" name="time-check_d-weeks" value="all">
+										<label for="time-check_d-weeks-all">
 											<div class="check"></div>
 											<span>Все</span>
 										</label>
 									</div>
 									<div class="base-radio">
-										<input type="radio" id="tc-r-2" name="time-check_d-weeks" value="">
-										<label for="tc-r-2">
+										<input type="radio" id="time-check_d-weeks-select" name="time-check_d-weeks" value="selection">
+										<label for="time-check_d-weeks-select">
 											<div class="check"></div>
 											<span>Выборочно</span>
 										</label>
+									</div>
+									<div class="weekdays-choosing__checkboxes">
+										<div class="base-checkbox">
+											<input type="checkbox" id="wds-c1" name="wds-c1">
+											<label for="wds-c1">
+												<div class="check"></div>
+												<span>Пн</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="wds-c2" name="wds-c2">
+											<label for="wds-c2">
+												<div class="check"></div>
+												<span>Вт</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="wds-c3" name="wds-c3">
+											<label for="wds-c3">
+												<div class="check"></div>
+												<span>Ср</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="wds-c4" name="wds-c4">
+											<label for="wds-c4">
+												<div class="check"></div>
+												<span>Чт</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="wds-c5" name="wds-c5">
+											<label for="wds-c5">
+												<div class="check"></div>
+												<span>Пт</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="wds-c6" name="wds-c6">
+											<label for="wds-c6">
+												<div class="check"></div>
+												<span>Сб</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="wds-c7" name="wds-c7">
+											<label for="wds-c7">
+												<div class="check"></div>
+												<span>Нд</span>
+											</label>
+										</div>
 									</div>
 								</div>
 								<div class="input-block double-radio">
-									<label>Дни месяца</label>
+									<label>Дни месяца <span class="tooltip-faq-dot js-tooltip" title="Укажите дни месяца в которые вы бы хотели установить проверку">?</span></label>
 									<div class="base-radio">
-										<input type="radio" id="tc-r-3" name="time-check_d-month" value="">
-										<label for="tc-r-3">
+										<input type="radio" id="time-check_d-month-all" name="time-check_d-month" value="">
+										<label for="time-check_d-month-all">
 											<div class="check"></div>
 											<span>Все</span>
 										</label>
 									</div>
 									<div class="base-radio">
-										<input type="radio" id="tc-r-4" name="time-check_d-month" value="">
-										<label for="tc-r-4">
+										<input type="radio" id="time-check_d-month-select" name="time-check_d-month" value="">
+										<label for="time-check_d-month-select">
 											<div class="check"></div>
 											<span>Выборочно</span>
 										</label>
+									</div>
+									<div class="monthdays-choosing__checkboxes">
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c1" name="mds-c1">
+											<label for="mds-c1">
+												<div class="check"></div>
+												<span>01</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c2" name="mds-c2">
+											<label for="mds-c2">
+												<div class="check"></div>
+												<span>02</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c3" name="mds-c3">
+											<label for="mds-c3">
+												<div class="check"></div>
+												<span>03</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c4" name="mds-c4">
+											<label for="mds-c4">
+												<div class="check"></div>
+												<span>04</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c5" name="mds-c5">
+											<label for="mds-c5">
+												<div class="check"></div>
+												<span>05</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c6" name="mds-c6">
+											<label for="mds-c6">
+												<div class="check"></div>
+												<span>06</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c7" name="mds-c7">
+											<label for="mds-c7">
+												<div class="check"></div>
+												<span>07</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c8" name="mds-c8">
+											<label for="mds-c8">
+												<div class="check"></div>
+												<span>08</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c9" name="mds-c9">
+											<label for="mds-c9">
+												<div class="check"></div>
+												<span>09</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c10" name="mds-c10">
+											<label for="mds-c10">
+												<div class="check"></div>
+												<span>10</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c11" name="mds-c11">
+											<label for="mds-c11">
+												<div class="check"></div>
+												<span>11</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c12" name="mds-c12">
+											<label for="mds-c12">
+												<div class="check"></div>
+												<span>12</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c13" name="mds-c13">
+											<label for="mds-c13">
+												<div class="check"></div>
+												<span>13</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c14" name="mds-c14">
+											<label for="mds-c14">
+												<div class="check"></div>
+												<span>14</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c15" name="mds-c15">
+											<label for="mds-c15">
+												<div class="check"></div>
+												<span>15</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c16" name="mds-c16">
+											<label for="mds-c16">
+												<div class="check"></div>
+												<span>16</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c17" name="mds-c17">
+											<label for="mds-c17">
+												<div class="check"></div>
+												<span>17</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c18" name="mds-c18">
+											<label for="mds-c18">
+												<div class="check"></div>
+												<span>18</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c19" name="mds-c19">
+											<label for="mds-c19">
+												<div class="check"></div>
+												<span>19</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c20" name="mds-c20">
+											<label for="mds-c20">
+												<div class="check"></div>
+												<span>20</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c21" name="mds-c21">
+											<label for="mds-c21">
+												<div class="check"></div>
+												<span>21</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c22" name="mds-c22">
+											<label for="mds-c22">
+												<div class="check"></div>
+												<span>22</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c23" name="mds-c23">
+											<label for="mds-c23">
+												<div class="check"></div>
+												<span>23</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c24" name="mds-c24">
+											<label for="mds-c24">
+												<div class="check"></div>
+												<span>24</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c25" name="mds-c25">
+											<label for="mds-c25">
+												<div class="check"></div>
+												<span>25</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c26" name="mds-c26">
+											<label for="mds-c26">
+												<div class="check"></div>
+												<span>26</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c27" name="mds-c27">
+											<label for="mds-c27">
+												<div class="check"></div>
+												<span>27</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c28" name="mds-c28">
+											<label for="mds-c28">
+												<div class="check"></div>
+												<span>28</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c29" name="mds-c29">
+											<label for="mds-c29">
+												<div class="check"></div>
+												<span>29</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c30" name="mds-c30">
+											<label for="mds-c30">
+												<div class="check"></div>
+												<span>30</span>
+											</label>
+										</div>
+										<div class="base-checkbox">
+											<input type="checkbox" id="mds-c31" name="mds-c31">
+											<label for="mds-c31">
+												<div class="check"></div>
+												<span>31</span>
+											</label>
+										</div>
 									</div>
 								</div>
 								<div class="input-block double-radio">
 									<label>Месяц</label>
 									<div class="base-radio">
-										<input type="radio" id="tc-r-5" name="time-check_month" value="">
-										<label for="tc-r-5">
+										<input type="radio" id="time-check_month-all" name="time-check_month" value="">
+										<label for="time-check_month-all">
 											<div class="check"></div>
 											<span>Все</span>
 										</label>
 									</div>
 									<div class="base-radio">
-										<input type="radio" id="tc-r-6" name="time-check_month" value="">
-										<label for="tc-r-6">
+										<input type="radio" id="time-check_month-select" name="time-check_month" value="">
+										<label for="time-check_month-select">
 											<div class="check"></div>
 											<span>Выборочно</span>
 										</label>
+									</div>
+									<div class="monthlist-choosing__checkboxes">
+										<div class="col">
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c1" name="mls-c1">
+												<label for="mls-c1">
+													<div class="check"></div>
+													<span>Январь</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c2" name="mls-c2">
+												<label for="mls-c2">
+													<div class="check"></div>
+													<span>Февраль</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c3" name="mls-c3">
+												<label for="mls-c3">
+													<div class="check"></div>
+													<span>Март</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c4" name="mls-c4">
+												<label for="mls-c4">
+													<div class="check"></div>
+													<span>Апрель</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c5" name="mls-c5">
+												<label for="mls-c5">
+													<div class="check"></div>
+													<span>Май</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c6" name="mls-c6">
+												<label for="mls-c6">
+													<div class="check"></div>
+													<span>Июнь</span>
+												</label>
+											</div>
+										</div>
+										<div class="col">
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c7" name="mls-c7">
+												<label for="mls-c7">
+													<div class="check"></div>
+													<span>Июль</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c8" name="mls-c8">
+												<label for="mls-c8">
+													<div class="check"></div>
+													<span>Август</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c9" name="mls-c9">
+												<label for="mls-c9">
+													<div class="check"></div>
+													<span>Сентябрь</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c10" name="mls-c10">
+												<label for="mls-c10">
+													<div class="check"></div>
+													<span>Октябрь</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c11" name="mls-c11">
+												<label for="mls-c11">
+													<div class="check"></div>
+													<span>Ноябрь</span>
+												</label>
+											</div>
+											<div class="base-checkbox">
+												<input type="checkbox" id="mls-c12" name="mls-c12">
+												<label for="mls-c12">
+													<div class="check"></div>
+													<span>Декабрь</span>
+												</label>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="btns-row">
@@ -2275,7 +2638,7 @@
 									</span>
 									<span class="title">Завершение вызова</span>
 								</button>
-								<button class="scheme_popup__btn" data-config="time-check" onclick="openSchemeItemConfig(event)">
+								<button class="scheme_popup__btn js-tooltip" data-config="time-check" onclick="openSchemeItemConfig(event)" title="Установите различные проверки по датам и времени для распределения телефонного трафика">
 									<span class="ico">
 										<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -3199,7 +3562,65 @@
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="assets/js/tooltipster.bundle.min.js"></script>
 <script>
+
+
+	var radioWDall = document.querySelector('#time-check_d-weeks-all'),
+		radioWDselect = document.querySelector('#time-check_d-weeks-select');
+
+	radioWDall.onchange= function() {
+		if (this.checked) {
+			// console.log(this.value)
+			if(document.querySelector('.weekdays-choosing__checkboxes').classList.contains('show')){
+				document.querySelector('.weekdays-choosing__checkboxes').classList.remove('show');
+			}
+		}
+	};
+	radioWDselect.onchange= function() {
+		if (this.checked) {
+			// console.log(this.value)
+			document.querySelector('.weekdays-choosing__checkboxes').classList.add('show');
+		}
+	};
+
+	var radioMDall = document.querySelector('#time-check_d-month-all'),
+		radioMDselect = document.querySelector('#time-check_d-month-select');
+
+	radioMDall.onchange= function() {
+		if (this.checked) {
+			// console.log(this.value)
+			if(document.querySelector('.monthdays-choosing__checkboxes').classList.contains('show')){
+				document.querySelector('.monthdays-choosing__checkboxes').classList.remove('show');
+			}
+		}
+	};
+	radioMDselect.onchange= function() {
+		if (this.checked) {
+			// console.log(this.value)
+			document.querySelector('.monthdays-choosing__checkboxes').classList.add('show');
+		}
+	};
+
+	var radioMall = document.querySelector('#time-check_month-all'),
+		radioMselect = document.querySelector('#time-check_month-select');
+
+	radioMall.onchange= function() {
+		if (this.checked) {
+			// console.log(this.value)
+			if(document.querySelector('.monthlist-choosing__checkboxes').classList.contains('show')){
+				document.querySelector('.monthlist-choosing__checkboxes').classList.remove('show');
+			}
+		}
+	};
+	radioMselect.onchange= function() {
+		if (this.checked) {
+			// console.log(this.value)
+			document.querySelector('.monthlist-choosing__checkboxes').classList.add('show');
+		}
+	};
+
+
 	// callschema
 
 	function openSchemePopup(event) {
@@ -3286,8 +3707,8 @@
 		const x = e.pageX;
 		const y = e.pageY;
 		// console.log('---',y);
-		const walkX = (x - startX) * 0.1;
-		const walkY = (y - startY) * 0.1;
+		const walkX = (x - startX) * 0.045;
+		const walkY = (y - startY) * 0.045;
 		container.scrollLeft = container.scrollLeft - walkX;
 		container.scrollTop = container.scrollTop - walkY;
 	}
@@ -3318,6 +3739,15 @@
   $(document).ready(function(){
     $('.scrollbar-inner').each(function() {
       $(this).scrollbar();
+    });
+    // 
+    $('.js-tooltip').each(function() {
+      $(this).tooltipster({
+		theme: 'tooltipster-borderless',
+		maxWidth: 300,
+		side:  'bottom',
+		delay: 100
+      });
     });
   });
 
