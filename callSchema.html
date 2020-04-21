@@ -608,6 +608,9 @@
 	<!-- HEADER -->
 	<main class="callSchema__page">
 		<div class="wrap">
+			<div class="callSchema__page__open-sidebar-btn btn base-btn">
+				<svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m499.953125 197.703125-39.351563-8.554687c-3.421874-10.476563-7.660156-20.695313-12.664062-30.539063l21.785156-33.886719c3.890625-6.054687 3.035156-14.003906-2.050781-19.089844l-61.304687-61.304687c-5.085938-5.085937-13.035157-5.941406-19.089844-2.050781l-33.886719 21.785156c-9.84375-5.003906-20.0625-9.242188-30.539063-12.664062l-8.554687-39.351563c-1.527344-7.03125-7.753906-12.046875-14.949219-12.046875h-86.695312c-7.195313 0-13.421875 5.015625-14.949219 12.046875l-8.554687 39.351563c-10.476563 3.421874-20.695313 7.660156-30.539063 12.664062l-33.886719-21.785156c-6.054687-3.890625-14.003906-3.035156-19.089844 2.050781l-61.304687 61.304687c-5.085937 5.085938-5.941406 13.035157-2.050781 19.089844l21.785156 33.886719c-5.003906 9.84375-9.242188 20.0625-12.664062 30.539063l-39.351563 8.554687c-7.03125 1.53125-12.046875 7.753906-12.046875 14.949219v86.695312c0 7.195313 5.015625 13.417969 12.046875 14.949219l39.351563 8.554687c3.421874 10.476563 7.660156 20.695313 12.664062 30.539063l-21.785156 33.886719c-3.890625 6.054687-3.035156 14.003906 2.050781 19.089844l61.304687 61.304687c5.085938 5.085937 13.035157 5.941406 19.089844 2.050781l33.886719-21.785156c9.84375 5.003906 20.0625 9.242188 30.539063 12.664062l8.554687 39.351563c1.527344 7.03125 7.753906 12.046875 14.949219 12.046875h86.695312c7.195313 0 13.421875-5.015625 14.949219-12.046875l8.554687-39.351563c10.476563-3.421874 20.695313-7.660156 30.539063-12.664062l33.886719 21.785156c6.054687 3.890625 14.003906 3.039063 19.089844-2.050781l61.304687-61.304687c5.085937-5.085938 5.941406-13.035157 2.050781-19.089844l-21.785156-33.886719c5.003906-9.84375 9.242188-20.0625 12.664062-30.539063l39.351563-8.554687c7.03125-1.53125 12.046875-7.753906 12.046875-14.949219v-86.695312c0-7.195313-5.015625-13.417969-12.046875-14.949219zm-152.160156 58.296875c0 50.613281-41.179688 91.792969-91.792969 91.792969s-91.792969-41.179688-91.792969-91.792969 41.179688-91.792969 91.792969-91.792969 91.792969 41.179688 91.792969 91.792969zm0 0"/></svg>
+			</div>
 			<aside class="callSchema__page--sidebar">
 				<div class="scrollbar-inner main-scrollbar">
 					<div class="section-title">
@@ -1250,7 +1253,7 @@
 						<!--  -->
 						<div class="config-form readdress">
 							<div class="section-title">Перевод звонка на кого-то</div>
-							<form action="">
+							<div class="form_div">
 								<div class="form-title">Номер или группа</div>
 								<div class="internal-num">
 									<div class="base-radio">
@@ -1292,8 +1295,8 @@
 									<button class="btn base-btn">Добавить</button>
 									<button class="btn base-btn grey">Отмена</button>
 								</div>
-							</form>
-							<form action="">
+							</div>
+							<div class="form_div">
 								<div class="select-block form-ready-integration__select">
 									<label>Условия звонка</label>
 									<dl class="select select-filter select-flag scrollable">
@@ -1352,12 +1355,12 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form audio-message">
 							<div class="section-title">Аудио-сообщение</div>
-							<form action="">
+							<div class="form_div">
 								<div class="input-adding">
 									<div class="select-block">
 										<label>Аудио-сообщение</label>
@@ -1380,12 +1383,12 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form voice-menu">
 							<div class="section-title">Голосовое меню</div>
-							<form action="">
+							<div class="form_div">
 								<div class="input-adding">
 									<div class="select-block">
 										<label>Аудио-сообщение</label>
@@ -1429,12 +1432,12 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form move-to-node">
 							<div class="section-title">Переход на действие</div>
-							<form action="">
+							<div class="form_div">
 								<div class="select-block">
 									<label>Действие для перехода</label>
 									<dl class="select select-filter select-flag scrollable">
@@ -1456,12 +1459,12 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form voice-mail">
 							<div class="section-title">Голосовая почта</div>
-							<form action="">
+							<div class="form_div">
 								<div class="input-adding">
 									<div class="select-block">
 										<label>E-mail</label>
@@ -1519,12 +1522,12 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form fax">
 							<div class="section-title">Факс</div>
-							<form action="">
+							<div class="form_div">
 								<div class="input-adding">
 									<div class="select-block">
 										<label>E-mail для получения факса</label>
@@ -1547,12 +1550,12 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form que">
 							<div class="section-title">Очередь</div>
-							<form action="">
+							<div class="form_div">
 								<div class="input-adding">
 									<div class="select-block">
 										<dl class="select select-filter select-flag scrollable">
@@ -1574,12 +1577,12 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form move-to-num">
 							<div class="section-title">Ввод добавочного номера</div>
-							<form action="">
+							<div class="form_div">
 								<div class="input-adding">
 									<div class="select-block">
 										<label>Аудио-сообщение</label>
@@ -1606,25 +1609,25 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form start-call">
 							<div class="section-title">Поднять трубку</div>
-							<form action="">
+							<div class="form_div">
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form end-call">
 							<div class="section-title">Завершение вызова</div>
-							<form action="">
+							<div class="form_div">
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form time-check">
@@ -1632,7 +1635,7 @@
 								Проверка по времени
 								<span class="tooltip-faq-dot js-tooltip" title="Установите различные проверки по датам и времени для распределения телефонного трафика">?</span>
 							</div>
-							<form action="">
+							<div class="form_div">
 								<div class="input-block double-inputs">
 									<label for="tc-i-1">Время</label>
 									<div class="input-wraps">
@@ -2073,12 +2076,12 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 						<div class="config-form num-check">
 							<div class="section-title">Проверка по номеру</div>
-							<form action="">
+							<div class="form_div">
 								<div class="input-block">
 									<label for="nc-i-1">Номер</label>
 									<input type="text" id="nc-i-1" name="nc-i-1" value="" placeholder="+ X (XXX) XXX-XX-XX">
@@ -2119,7 +2122,7 @@
 								<div class="btns-row">
 									<button class="btn base-btn">Добавить действие</button>
 								</div>
-							</form>
+							</div>
 						</div>
 						<!--  -->
 					</div>
@@ -3623,22 +3626,37 @@
 
 	// callschema
 
+	 window.onload = function(){
+	 	var item = document.querySelector('.callScheme--wrap .item'),
+	 		// x = item.getBoundingClientRect().left,
+	 		x = item.offsetLeft,
+	 		container = document.querySelector('.callSchema__page--scheme-section .scrollbar-inner.scroll-content'),
+	 		maxScrollLeft = container.scrollWidth - container.clientWidth,
+	 		percent = (x + item.clientWidth/2)/container.scrollWidth * 100,
+	 		centerScrollLeft = maxScrollLeft/100*percent;
+	 		// console.log('x%', percent);
+	 		// console.log('x-c%', centerScrollLeft);
+	 	container.scrollLeft = centerScrollLeft;
+	 };
+
 	function openSchemePopup(event) {
 		var btnRect = event.currentTarget.getBoundingClientRect(),
 			containerRect = document.querySelector('.callSchema__page--scheme-section__inner').getBoundingClientRect()
 			popup = document.querySelector('.scheme_popup');
 		if (!popup.classList.contains('active')) {
-			console.log(btnRect.left-containerRect.left)
+			// console.log(btnRect.left-containerRect.left)
 			if ((btnRect.left-containerRect.left) < 275) {popup.style.left = 280+"px";}
 			else{popup.style.left = btnRect.left-containerRect.left +"px"}
 			popup.style.top = btnRect.bottom-containerRect.top+20+"px";
 			popup.classList.add('active');
+			document.querySelector('.callSchema__page--scheme-section__inner').classList.add('popup-opened');
 		}else{
 			// hideSchemePopup();
 		}
 	};
 	// 
 	function hideSchemePopup(event) {
+			document.querySelector('.callSchema__page--scheme-section__inner').classList.remove('popup-opened');
 		document.querySelector('.scheme_popup').classList.remove('active');
 		var configBlock = document.querySelector('.callSchema__page--configs')
 		if(configBlock.classList.contains('active')){
