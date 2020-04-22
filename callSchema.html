@@ -608,14 +608,19 @@
 	<!-- HEADER -->
 	<main class="callSchema__page">
 		<div class="wrap">
-			<div class="callSchema__page__open-sidebar-btn btn base-btn">
+			<div class="callSchema__page__open-sidebar-btn btn base-btn" onclick="openSidebar(event)">
 				<svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m499.953125 197.703125-39.351563-8.554687c-3.421874-10.476563-7.660156-20.695313-12.664062-30.539063l21.785156-33.886719c3.890625-6.054687 3.035156-14.003906-2.050781-19.089844l-61.304687-61.304687c-5.085938-5.085937-13.035157-5.941406-19.089844-2.050781l-33.886719 21.785156c-9.84375-5.003906-20.0625-9.242188-30.539063-12.664062l-8.554687-39.351563c-1.527344-7.03125-7.753906-12.046875-14.949219-12.046875h-86.695312c-7.195313 0-13.421875 5.015625-14.949219 12.046875l-8.554687 39.351563c-10.476563 3.421874-20.695313 7.660156-30.539063 12.664062l-33.886719-21.785156c-6.054687-3.890625-14.003906-3.035156-19.089844 2.050781l-61.304687 61.304687c-5.085937 5.085938-5.941406 13.035157-2.050781 19.089844l21.785156 33.886719c-5.003906 9.84375-9.242188 20.0625-12.664062 30.539063l-39.351563 8.554687c-7.03125 1.53125-12.046875 7.753906-12.046875 14.949219v86.695312c0 7.195313 5.015625 13.417969 12.046875 14.949219l39.351563 8.554687c3.421874 10.476563 7.660156 20.695313 12.664062 30.539063l-21.785156 33.886719c-3.890625 6.054687-3.035156 14.003906 2.050781 19.089844l61.304687 61.304687c5.085938 5.085937 13.035157 5.941406 19.089844 2.050781l33.886719-21.785156c9.84375 5.003906 20.0625 9.242188 30.539063 12.664062l8.554687 39.351563c1.527344 7.03125 7.753906 12.046875 14.949219 12.046875h86.695312c7.195313 0 13.421875-5.015625 14.949219-12.046875l8.554687-39.351563c10.476563-3.421874 20.695313-7.660156 30.539063-12.664062l33.886719 21.785156c6.054687 3.890625 14.003906 3.039063 19.089844-2.050781l61.304687-61.304687c5.085937-5.085938 5.941406-13.035157 2.050781-19.089844l-21.785156-33.886719c5.003906-9.84375 9.242188-20.0625 12.664062-30.539063l39.351563-8.554687c7.03125-1.53125 12.046875-7.753906 12.046875-14.949219v-86.695312c0-7.195313-5.015625-13.417969-12.046875-14.949219zm-152.160156 58.296875c0 50.613281-41.179688 91.792969-91.792969 91.792969s-91.792969-41.179688-91.792969-91.792969 41.179688-91.792969 91.792969-91.792969 91.792969 41.179688 91.792969 91.792969zm0 0"/></svg>
 			</div>
 			<aside class="callSchema__page--sidebar">
 				<div class="scrollbar-inner main-scrollbar">
 					<div class="section-title">
-						Схема телефонии
-						<span class="tooltip-faq-dot js-tooltip" title="В данном разделе вы можете настроить схему обработки входящих звонков вашей телефонии. Для каждого телефона используются...">?</span>
+						<div class="heading">
+							Схема телефонии
+							<span class="tooltip-faq-dot js-tooltip" title="В данном разделе вы можете настроить схему обработки входящих звонков вашей телефонии. Для каждого телефона используются...">?</span>
+						</div>
+						<div class="callSchema__page__close-sidebar-btn btn" onclick="closeSidebar(event)">
+							<svg id="Capa_1" enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
+						</div>
 					</div>
 					<div class="base-tab">
 						<div class="base-tab__header">
@@ -1251,6 +1256,9 @@
 				<div class="callSchema__page--configs" data-config="">
 					<div class="scrollbar-inner main-scrollbar">
 						<!--  -->
+						<div class="callSchema__page__close-sidebar-btn btn" onclick="closeSidebar(event)">
+							<svg id="Capa_1" enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
+						</div>
 						<div class="config-form readdress">
 							<div class="section-title">Перевод звонка на кого-то</div>
 							<div class="form_div">
@@ -3639,6 +3647,22 @@
 	 	container.scrollLeft = centerScrollLeft;
 	 };
 
+	function openSidebar(event){
+		document.querySelector('.callSchema__page--sidebar').classList.add('opened');
+	}
+	function closeSidebar(event){
+		document.querySelector('.callSchema__page--sidebar').classList.remove('opened');
+		if(document.querySelector('.scheme_popup').classList.contains('active')){
+			document.querySelector('.callSchema__page--configs.active').classList.remove('active');
+			document.querySelector('.scheme_popup__btn.active').classList.remove('active');
+		}
+		if(document.querySelector('.callScheme--wrap .item.active') && !event.currentTarget.parentElement.classList.contains('active')){
+			document.querySelector('.callScheme--wrap .item.active').classList.remove('active');
+			document.querySelector('.callSchema__page--configs.active').classList.remove('active');
+			document.querySelector('.callSchema__page--configs').setAttribute('data-config', '');
+		}
+	}
+
 	function openSchemePopup(event) {
 		var btnRect = event.currentTarget.getBoundingClientRect(),
 			containerRect = document.querySelector('.callSchema__page--scheme-section__inner').getBoundingClientRect()
@@ -3684,6 +3708,9 @@
 			var configName = event.currentTarget.getAttribute('data-config');
 			document.querySelector('.callSchema__page--configs').setAttribute('data-config', configName);
 		}
+		if(window.innerWidth <= 1000){
+			openSidebar();
+		}
 	}
 	function openSchemeItemConfig(event) {
 		if(document.querySelector('.callScheme--wrap .item.active')){
@@ -3702,6 +3729,9 @@
 		if(event.currentTarget.classList.contains('active')){
 			var configName = event.currentTarget.getAttribute('data-config');
 			document.querySelector('.callSchema__page--configs').setAttribute('data-config', configName);
+		}
+		if(window.innerWidth <= 1000){
+			openSidebar();
 		}
 	}
 
