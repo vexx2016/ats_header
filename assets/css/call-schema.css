@@ -7,6 +7,64 @@
     display: flex;
     max-width: 100%;
     position: relative; }
+  .callSchema__page.w-offer .callSchema__page--scheme-section,
+  .callSchema__page.w-offer .callSchema__page--sidebar {
+    height: calc(100vh - 77px - 65px); }
+  .callSchema__page--offer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 15px 2% 15px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fef1ba; }
+    .callSchema__page--offer.hide {
+      display: none; }
+    .callSchema__page--offer .content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .callSchema__page--offer .content .txt {
+        margin-right: 30px; }
+      .callSchema__page--offer .content .heading {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 3px; }
+      .callSchema__page--offer .content .info {
+        opacity: .7; }
+    .callSchema__page--offer .close-offer {
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+      margin-right: 0;
+      margin-left: auto;
+      font-family: font, helvetica, arial sans-serif;
+      font-size: 13px;
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease; }
+      .callSchema__page--offer .close-offer span {
+        line-height: 12px;
+        display: inline-block;
+        border-bottom: dashed 1px rgba(0, 0, 0, 0.35); }
+      .callSchema__page--offer .close-offer:hover {
+        color: #fd0032; }
+        .callSchema__page--offer .close-offer:hover span {
+          border-color: rgba(253, 0, 50, 0.35); }
   .callSchema__page .input-adding {
     display: -webkit-box;
     display: -webkit-flex;
@@ -61,7 +119,8 @@
                 flex-shrink: 0; }
       .callSchema__page--sidebar .section-title .callSchema__page__close-sidebar-btn {
         margin-left: auto;
-        margin-right: 0; }
+        margin-right: 0;
+        display: none; }
     .callSchema__page--sidebar .base-tab__header:before {
       bottom: 0; }
     .callSchema__page--sidebar .base-tab__header .btn {
@@ -1012,6 +1071,20 @@
     color: #fff;
     text-align: center; }
 
+@media (max-width: 1200px) {
+  .callSchema__page--offer .content {
+    width: 100%; }
+    .callSchema__page--offer .content .txt {
+      margin-bottom: 6px; }
+    .callSchema__page--offer .content .heading {
+      line-height: 1.2; }
+    .callSchema__page--offer .content .info {
+      line-height: 1.2; }
+  .callSchema__page--offer .close-offer {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 10px; } }
+
 @media (max-width: 1000px) {
   .callSchema__page__open-sidebar-btn.btn.base-btn {
     display: -webkit-box;
@@ -1021,6 +1094,8 @@
     z-index: 120; }
   .callSchema__page--scheme-section__save-btn.btn.base-btn {
     z-index: 120; }
+  .callSchema__page--sidebar .section-title .callSchema__page__close-sidebar-btn {
+    display: block; }
   .callSchema__page--sidebar {
     position: fixed;
     top: 77px;
@@ -1038,6 +1113,9 @@
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
+    .callSchema__page--sidebar .callSchema__page--configs .config-form,
+    .callSchema__page--sidebar .base-tab {
+      padding-bottom: 60px; }
     .callSchema__page--sidebar .base-tab__body {
       padding-right: 10px; }
     .callSchema__page--sidebar .base-tab__header .btn {
@@ -1047,6 +1125,10 @@
   .callSchema__page--scheme-section {
     width: 100%;
     padding-left: 0px; } }
+
+@media (max-width: 960px) {
+  .callSchema__page--offer .content .txt {
+    margin-right: 0; } }
 
 @media (max-width: 640px) {
   .callSchema__page--scheme-section {
